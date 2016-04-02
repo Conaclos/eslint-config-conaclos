@@ -2,6 +2,8 @@
 
 This package provides Conaclos's eslint sharable configuration.
 
+[![travis][travis-image]][travis-url]
+
 ## Content
 
 It proposes 4 configuration and 3 mods (*-mod.js).
@@ -104,4 +106,9 @@ The zlib license
 [esl-sc]: http://eslint.org/docs/developer-guide/shareable-configs
 [babel-parser]: https://github.com/babel/babel-eslint
 [babel-plugin]: https://github.com/babel/eslint-plugin-babel
+
+
+[travis-image]:
+https://img.shields.io/travis/Conaclos/eslint-config-conaclos/master.svg
+[travis-url]: https://travis-ci.org/Conaclos/eslint-config-conaclos
 
