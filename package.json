@@ -1,0 +1,63 @@
+{
+    "name": "eslint-config-conaclos",
+    "version": "1.0.0",
+    "title": "Conaclos's ESLint config",
+    "description": "ESLint shareable configuration from Conaclos",
+    "license": "Zlib",
+    "author": "Victorien Elvinger (victorien.elvinger.fr)",
+    "files": [
+        "index.js",
+        "base.js",
+        "esnext-base.js",
+        "style.js",
+        "esnext-style.js",
+        "browser-only-mod.js",
+        "node-only-mod.js",
+        "dist-mod.js"
+    ],
+    "main": "index.js",
+    "keywords": [
+        "eslintconfig",
+        "eslint",
+        "linter",
+        "jslint",
+        "jshint",
+        "jscs",
+        "checking",
+        "checker",
+        "quality",
+        "rules",
+        "enforcement",
+        "prevention",
+        "code",
+        "safer",
+        "better",
+        "style",
+        "strict",
+        "adaptable",
+        "modular"
+    ],
+    "scripts": {
+        "lint": "eslint -c style.js ./*.js && eslint -c esnext-style.js ./test",
+        "test": "ava"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "devDependencies": {
+        "ava": "*",
+        "temp-write": "^2.1.0",
+        "eslint": "^2.5.3",
+        "eslint-plugin-promise": "^1.0.8",
+        "eslint-plugin-extra-rules": "^0.6.1",
+        "babel-eslint": "^6.0.0",
+        "eslint-plugin-babel": "^3.0.0"
+    },
+    "peerDependencies": {
+        "eslint": ">=2.5.3",
+        "eslint-plugin-promise": ">=1.0.8",
+        "eslint-plugin-extra-rules": ">=0.6.1",
+        "babel-eslint": ">=6.0.0",
+        "eslint-plugin-babel": ">=3.0.0"
+    }
+}
