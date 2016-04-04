@@ -2,6 +2,7 @@
 import test from "ava"
 import eslint from "eslint"
 import tempWrite from "temp-write"
+import util from "util"
 
 test("base", (t) => {
     const conf = require("../base")
@@ -15,6 +16,17 @@ test("style", (t) => {
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, '"use strict"\n').count, 0)
+})
+
+test("style-max-len", (t) => {
+    const conf = require("../style")
+    const code = '"use strict"\nconst t = %s\nconsole.info(t)\n'
+    const largeString = '"' + "t".repeat(80) + '"'
+
+    t.is(eslintResults(conf,
+                util.format(code, largeString)).count, 0)
+    t.is(eslintResults(conf,
+                util.format(code, "1".repeat(80))).rules[0], "max-len")
 })
 
 test("esnext-base", (t) => {
