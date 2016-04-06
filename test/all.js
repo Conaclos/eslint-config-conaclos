@@ -23,12 +23,13 @@ test("style", (t) => {
 test("style-max-len", (t) => {
     const conf = styleConf
     const code = '"use strict"\nconst t = %s\nconsole.info(t)\n'
-    const largeString = '"' + "t".repeat(80) + '"'
+    const largeJsNumber = "1".repeat(80)
+    const largeJsString = util.format('"%s"', largeJsNumber)
+    const largeJsRegex = util.format("/%s/gi", largeJsNumber)
 
-    t.is(eslintResults(conf,
-                util.format(code, largeString)).length, 0)
-    t.is(eslintResults(conf,
-                util.format(code, "1".repeat(80)))[0], "max-len")
+    t.is(eslintResults(conf, util.format(code, largeJsString)).length, 0)
+    t.is(eslintResults(conf, util.format(code, largeJsRegex)).length, 0)
+    t.is(eslintResults(conf, util.format(code, largeJsNumber))[0], "max-len")
 })
 
 test("esnext-base", (t) => {

@@ -56,7 +56,7 @@ module.exports = {
         "linebreak-style": [2, "unix"],
         "max-len": [2, 80, 4, {
             ignoreUrls: true,
-            ignorePattern: "[\"'`\\/]$"
+            ignorePattern: "(?:[\"'`]|\\/[gimuy]*);*$"
                 // Don't apply to strings and regex.
                 // Easier error or warning message search
         }],
