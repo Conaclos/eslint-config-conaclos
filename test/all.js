@@ -4,6 +4,8 @@ import eslint from "eslint"
 import tempWrite from "temp-write"
 import util from "util"
 
+const styleConf = require("../style")
+
 test("base", (t) => {
     const conf = require("../base")
 
@@ -12,14 +14,14 @@ test("base", (t) => {
 })
 
 test("style", (t) => {
-    const conf = require("../style")
+    const conf = styleConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, '"use strict"\n').count, 0)
 })
 
 test("style-max-len", (t) => {
-    const conf = require("../style")
+    const conf = styleConf
     const code = '"use strict"\nconst t = %s\nconsole.info(t)\n'
     const largeString = '"' + "t".repeat(80) + '"'
 
