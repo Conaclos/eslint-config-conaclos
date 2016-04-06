@@ -10,14 +10,14 @@ test("base", (t) => {
     const conf = require("../base")
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, '"use strict";').count, 0)
+    t.is(eslintResults(conf, '"use strict";').length, 0)
 })
 
 test("style", (t) => {
     const conf = styleConf
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, '"use strict"\n').count, 0)
+    t.is(eslintResults(conf, '"use strict"\n').length, 0)
 })
 
 test("style-max-len", (t) => {
@@ -26,44 +26,44 @@ test("style-max-len", (t) => {
     const largeString = '"' + "t".repeat(80) + '"'
 
     t.is(eslintResults(conf,
-                util.format(code, largeString)).count, 0)
+                util.format(code, largeString)).length, 0)
     t.is(eslintResults(conf,
-                util.format(code, "1".repeat(80))).rules[0], "max-len")
+                util.format(code, "1".repeat(80)))[0], "max-len")
 })
 
 test("esnext-base", (t) => {
     const conf = require("../esnext-base")
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, "").count, 0)
+    t.is(eslintResults(conf, "").length, 0)
 })
 
 test("esnext-style", (t) => {
     const conf = require("../esnext-style")
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, "\n").count, 0)
+    t.is(eslintResults(conf, "\n").length, 0)
 })
 
 test("dist-mod", (t) => {
     const conf = require("../dist-mod")
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, "").count, 0)
+    t.is(eslintResults(conf, "").length, 0)
 })
 
 test("browser-only-mod", (t) => {
     const conf = require("../browser-only-mod")
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, "").count, 0)
+    t.is(eslintResults(conf, "").length, 0)
 })
 
 test("node-only-mod", (t) => {
     const conf = require("../node-only-mod")
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, "").count, 0)
+    t.same(eslintResults(conf, "").length, 0)
 })
 
 // Utils
@@ -80,8 +80,8 @@ function isPlain (o) {
 /**
  * @param {object} aConf - plain configuration object
  * @param {string} aCode - JS (inline) code
- * @return {number} Numner of reported errors of the execution of ESLint
- *      on `aCode' with `aConf' as configuration
+ * @return {string[]} List of reported errors and warning of the execution of
+ *      ESLint on `aCode' with `aConf' as configuration
  */
 function eslintResults (aConf, aCode) {
     const cli = new eslint.CLIEngine({
@@ -90,9 +90,6 @@ function eslintResults (aConf, aCode) {
     })
     const outputs = cli.executeOnText(aCode).results[0]
 
-    return {
-        count: outputs.errorCount + outputs.warningCount,
-        rules: outputs.messages.map((msg) => msg.ruleId),
-    }
+    return outputs.messages.map((msg) => msg.ruleId)
 }
 
