@@ -42,22 +42,18 @@
         "test": "ava"
     },
     "engines": {
-        "node": ">=0.10.0"
+        "node": ">=4.2.0"
     },
     "devDependencies": {
-        "ava": "*",
+        "ava": "^0.14.0",
         "temp-write": "^2.1.0",
         "eslint": "^2.5.3",
         "eslint-plugin-promise": "^1.0.8",
-        "eslint-plugin-extra-rules": "^0.6.1",
-        "babel-eslint": "^6.0.0",
-        "eslint-plugin-babel": "^3.0.0"
+        "eslint-plugin-extra-rules": "^0.6.1"
     },
     "peerDependencies": {
         "eslint": ">=2.5.3",
         "eslint-plugin-promise": ">=1.0.8",
-        "eslint-plugin-extra-rules": ">=0.6.1",
-        "babel-eslint": ">=6.0.0",
-        "eslint-plugin-babel": ">=3.0.0"
+        "eslint-plugin-extra-rules": ">=0.6.1"
     }
 }
