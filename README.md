@@ -4,6 +4,8 @@ This package provides Conaclos's eslint sharable configuration.
 
 [![travis][travis-image]][travis-url]
 
+[![Dependency Status][versioneye-image]][versioneye-url]
+
 ## Content
 
 It proposes 4 configuration and 3 mods (*-mod.js).
@@ -111,4 +113,8 @@ The zlib license
 [travis-image]:
 https://img.shields.io/travis/Conaclos/eslint-config-conaclos/master.svg
 [travis-url]: https://travis-ci.org/Conaclos/eslint-config-conaclos
+[versioneye-image]:
+https://www.versioneye.com/user/projects/5708d96ffcd19a005185516b/badge.svg?style=flat
+[versioneye-url]:
+https://www.versioneye.com/user/projects/5708d96ffcd19a005185516b
 
