@@ -51,13 +51,6 @@ It reports the use of console and other non-standard features.
 npm install --save-dev eslint-config-conaclos eslint-plugin-extra-rules eslint-plugin-promise
 ```
 
-If you choose `esnext-*` as configuration you also need Babel's ESLint
-[parser][babel-parser] and the attached eslint [plugin][babel-plugin].
-
-```bash
-npm install --save-dev babel-eslint eslint-plugin-babel
-```
-
 ## Usage
 
 [ESLint shareable configuration][esl-sc] may be used with the `extends` feature
@@ -106,9 +99,6 @@ Always place a mod after the main configuration:
 The zlib license
 
 [esl-sc]: http://eslint.org/docs/developer-guide/shareable-configs
-[babel-parser]: https://github.com/babel/babel-eslint
-[babel-plugin]: https://github.com/babel/eslint-plugin-babel
-
 
 [travis-image]:
 https://img.shields.io/travis/Conaclos/eslint-config-conaclos/master.svg
