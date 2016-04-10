@@ -48,7 +48,13 @@ It reports the use of console and other non-standard features.
 ## Setup
 
 ```bash
-npm install --save-dev eslint-config-conaclos eslint-plugin-extra-rules eslint-plugin-promise
+npm install --save-dev eslint-config-conaclos
+```
+
+You need to install ESLint and two plugins:
+
+```bash
+npm install --save-dev eslint eslint-plugin-extra-rules eslint-plugin-promise
 ```
 
 ## Usage
