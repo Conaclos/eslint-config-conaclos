@@ -53,9 +53,8 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "opt --out pre-commit --exec 'npm run lint'",
       "commit-msg": "opt --out commit-msg --exec validate-commit-msg",
-      "pre-push": "opt --out pre-push --exec 'npm run test:unit'"
+      "pre-push": "opt --out pre-push --exec 'npm test'"
     }
   },
   "engines": {

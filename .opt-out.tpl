@@ -13,7 +13,6 @@
 # 3. Disable a hook by uncommenting the line where its name is marked
 #
 
-#pre-commit
 #commit-msg
 #pre-push
 
