@@ -3,9 +3,10 @@
 This package provides Conaclos's eslint sharable configuration.
 
 [![travis][travis-image]][travis-url]
-
 [![Dependency Status][versioneye-image]][versioneye-url]
+
 [![Standard Version][sv-image]][sv-url]
+[![NPM version][npm-image]][npm-url]
 
 ## Content
 
@@ -118,4 +119,8 @@ https://www.versioneye.com/user/projects/5708d96ffcd19a005185516b
 https://img.shields.io/badge/release-standard%20version-brightgreen.svg
 [sv-url]:
 https://github.com/conventional-changelog/standard-version
+[npm-image]:
+https://img.shields.io/npm/v/eslint-config-conaclos.svg
+[npm-url]:
+https://www.npmjs.com/package/eslint-config-conaclos
 
