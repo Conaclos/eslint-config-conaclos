@@ -70,7 +70,7 @@ test("node-only-mod", (t) => {
     const conf = nodeOnlyModConf
 
     t.true(isPlain(conf))
-    t.same(eslintResults(conf, "").length, 0)
+    t.is(eslintResults(conf, "").length, 0)
 })
 
 // Utils
