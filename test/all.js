@@ -4,10 +4,16 @@ import eslint from "eslint"
 import tempWrite from "temp-write"
 import util from "util"
 
-const styleConf = require("../style")
+import baseConf from "../base"
+import esnextBaseConf from "../esnext-base"
+import styleConf from "../style"
+import esnextStyleConf from "../esnext-style"
+import distModConf from "../dist-mod"
+import browserOnlyModConf from "../browser-only-mod"
+import nodeOnlyModConf from "../node-only-mod"
 
 test("base", (t) => {
-    const conf = require("../base")
+    const conf = baseConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, '"use strict";').length, 0)
@@ -33,35 +39,35 @@ test("style-max-len", (t) => {
 })
 
 test("esnext-base", (t) => {
-    const conf = require("../esnext-base")
+    const conf = esnextBaseConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "").length, 0)
 })
 
 test("esnext-style", (t) => {
-    const conf = require("../esnext-style")
+    const conf = esnextStyleConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "\n").length, 0)
 })
 
 test("dist-mod", (t) => {
-    const conf = require("../dist-mod")
+    const conf = distModConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "").length, 0)
 })
 
 test("browser-only-mod", (t) => {
-    const conf = require("../browser-only-mod")
+    const conf = browserOnlyModConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "").length, 0)
 })
 
 test("node-only-mod", (t) => {
-    const conf = require("../node-only-mod")
+    const conf = nodeOnlyModConf
 
     t.true(isPlain(conf))
     t.same(eslintResults(conf, "").length, 0)
