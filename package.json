@@ -47,7 +47,7 @@
   ],
   "scripts": {
     "lint": "eslint -c style.js ./*.js && eslint -c esnext-style.js ./test",
-    "release": "standard-version",
+    "release": "standard-version --sign",
     "test:unit": "ava",
     "test": "npm run lint && npm run test:unit"
   },
@@ -67,7 +67,7 @@
     "eslint-plugin-promise": "^1.0.8",
     "ghooks": "^1.2.0",
     "opt-cli": "^1.4.0",
-    "standard-version": "^2.1.1",
+    "standard-version": "^2.2.1",
     "temp-write": "^2.1.0",
     "validate-commit-msg": "^2.5.0"
   },
