@@ -39,7 +39,6 @@ module.exports = {
         }],
             // Only assertions and logging facilities should be in the source
         "no-constant-condition": 2,
-        "no-negated-in-lhs": 2,
         "no-control-regex": 2,
         "no-debugger": 1,
         "no-dupe-args": 2,
@@ -65,10 +64,12 @@ module.exports = {
         "no-obj-calls": 2,
         "no-regex-spaces": 2,
             // Prevent against inadvertent spaces
+        "no-template-curly-in-string": 2,
         "no-unexpected-multiline": 2,
             // Prevent against the parsing of a single expression as
             // two expressions
         "no-unreachable": 2,
+        "no-unsafe-negation": 2,
         "use-isnan": 2,
         "valid-jsdoc": 2,
         "valid-typeof": 2,
@@ -95,6 +96,7 @@ module.exports = {
         "no-alert": 2,
         "no-eval": 2,
         "no-extend-native": 2,
+        "no-global-assign": 2,
         "no-implicit-coercion": 2,
         "no-implied-eval": 2,
         "no-invalid-this": 2,
@@ -103,8 +105,7 @@ module.exports = {
             allowSwitch: false
         }],
         "no-loop-func": 2,
-        "no-native-reassign": 2,
-            // Don't reassign global JS variables
+            // Make read-only the global variables
         "no-new-func": 2,
         "no-new-wrappers": 2,
             // Avoid issues with typeof
@@ -227,12 +228,14 @@ module.exports = {
             // One declaration for each initialized variable
         // Harmful features
         "no-underscore-dangle": [2, {
-            allowAfterThis: true
+            allowAfterThis: true,
+            allowAfterSuper: true
         }],
             // Variables prefixed with an underscore should only be fields
         "no-unneeded-ternary": [2, {
             defaultAssignment: false
         }],
+        "unicode-bom": [2, "never"],
 
     // ES6
         "constructor-super": 2,
@@ -241,6 +244,10 @@ module.exports = {
         "no-dupe-class-members": 2,
         "no-new-symbol": 2,
         "no-this-before-super": 2,
+        "no-useless-computed-key": 2,
+        "no-useless-rename": [2, {
+            ignoreDestructuring: true
+        }],
         "require-yield": 2,
         "no-confusing-arrow": [2, {
             allowParens: true

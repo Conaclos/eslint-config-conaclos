@@ -38,6 +38,7 @@ module.exports = {
         "comma-style": [2, "last"],
         "computed-property-spacing": [2, "never"],
         "eol-last": [2, "unix"],
+        "func-call-spacing": 2,
         "func-style": [2, "declaration", {
             allowArrowFunctions: true
         }],
@@ -47,7 +48,8 @@ module.exports = {
         }],
         "key-spacing": [2, {
             beforeColon: false,
-            afterColon: true
+            afterColon: true,
+            mode: "strict"
         }],
         "keyword-spacing": [2, {
             before: true,
@@ -67,16 +69,30 @@ module.exports = {
             capIsNew: false
         }],
         "no-lonely-if": 2,
+        "no-mixed-operators": [2, {
+            groups: [
+                ["&&", "||"]
+            ]
+        }],
         "no-mixed-spaces-and-tabs": 2,
         "no-multiple-empty-lines": [2, {
             max: 1
         }],
         "no-negated-condition": 2,
-        "no-spaced-func": 2,
+        "no-tabs": 2,
         "no-trailing-spaces": 2,
         "no-whitespace-before-property": 2,
         "operator-assignment": [2, "never"],
+        "object-curly-newline": [2, {
+            ObjectExpression: {
+                minProperties: 1
+            },
+            ObjectPattern: {
+                multiline: true
+            }
+        }],
         "object-curly-spacing": [2, "never"],
+        "object-property-newline": 2,
         "operator-linebreak": [2, "after", {
             overrides: {
                 "?": "before",
