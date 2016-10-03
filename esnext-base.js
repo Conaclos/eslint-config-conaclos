@@ -10,6 +10,7 @@ module.exports = {
     rules: {
         "no-var": 2,
         "prefer-const": 2,
+        "prefer-numeric-literals": 2,
         "prefer-reflect": [2, {
             exceptions: ["delete"]
         }]
