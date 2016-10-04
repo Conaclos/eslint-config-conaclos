@@ -71,7 +71,13 @@ module.exports = {
         "no-unreachable": 2,
         "no-unsafe-negation": 2,
         "use-isnan": 2,
-        "valid-jsdoc": 2,
+        "valid-jsdoc": [2, {
+            requireReturn: false,
+                // Don't require return tag for procedures
+            requireReturnType: false,
+            requireParamDescription: false,
+            requireReturnDescription: false
+        }],
         "valid-typeof": 2,
 
     // Best practice
