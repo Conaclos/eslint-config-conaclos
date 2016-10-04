@@ -109,7 +109,9 @@ module.exports = {
             numbers: true,
             keywords: true
         }],
-        quotes: [2, "double", "avoid-escape"],
+        quotes: [2, "double", {
+            avoidEscape: true
+        }],
         semi: [2, "never"],
         "semi-spacing": [2, {
             before: false,
