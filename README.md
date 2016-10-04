@@ -96,8 +96,8 @@ Always place a mod after the main configuration:
 {
     "extends": [
         "conaclos/esnext-base",
-        "dist-mod",
-        "browser-only-mod"
+        "conaclos/dist-mod",
+        "conaclos/browser-only-mod"
     ]
 }
 ```
