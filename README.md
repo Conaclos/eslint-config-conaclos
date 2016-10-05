@@ -1,6 +1,6 @@
 # eslint-config-conaclos
 
-This package provides Conaclos's eslint sharable configuration.
+This package provides gradual and personal ESLint sharable configurations.
 
 [![travis][travis-image]][travis-url]
 [![Dependency Status][versioneye-image]][versioneye-url]
@@ -10,74 +10,41 @@ This package provides Conaclos's eslint sharable configuration.
 
 ## Content
 
-It proposes 4 configuration and 3 mods (*-mod.js).
+### Configurations
 
-### base
+The package proposes 4 configurations and 3 mods, including 2 basic
+configurations and 2 more personal (styling rules).
 
-**base** provides the primitive set of rules.
-It is recommended for an ES5-compliant project.
+The basic one (base or esnext-base) can be combined with another sharable
+configuration such as standardJS (see the usage section).
 
-It let you use ES2015 (ES6) features, but doesn't enforce it.
+**base** is for an ES5-compliant project.
 
-### style
+Prefer use **esnext-base** For an ES2015 (ES6) or ES2016+ project. It enforces
+the use of ES2015 (ES6) features.
 
-**style** extends **base** with styling rules.
-If you like my coding style convention you may use it.
+**style** and **esnext-style** respectively extends **base** and **esnext-base**
+with more personal rules (4 spaces indentation, ...).
 
-### esnext-base
+### Mods
 
-**esnext-base** includes all rules of **base**.
-It is recommended for an ES2015 (ES6) or ES7 project.
-
-### esnext-style
-
-**esnext-style** extends **esnext-base** with styling rules.
-
-### browser-only-mod
-
-By default the above configurations enable both browser and node environment.
+By default the above configurations enable both browser and node environments.
 **browser-only-mod** disable all environments except browser environment.
-
-### node-only-mod
 
 **node-only-mod** disable all environments except node environment.
 
-### dist-mod
-
-**dist-mod** (distribution mod) is recommended for checking your distribution.
+**dist-mod** (distribution mod) is suitable for checking your distribution.
 It reports the use of console and other non-standard features.
-
-## Setup
-
-```bash
-npm install --save-dev eslint-config-conaclos
-```
-
-You need to install ESLint and two plugins:
-
-```bash
-npm install --save-dev eslint eslint-plugin-extra-rules eslint-plugin-promise
-```
 
 ## Usage
 
-[ESLint shareable configuration][esl-sc] may be used with the `extends` feature
+[ESLint shareable configuration][esl-sc] may be used with the `extends` property
  of `.eslintrc` files.
 
-Create `.eslintrc.json' and paste:
+Create `.eslintrc' and paste:
 ```json
 {
     "extends": "conaclos"
-}
-```
-
-or add an ESLint configuration to your `package.json`:
-```json
-{
-    "name": "my high quality project",
-    "eslintConfig": {
-        "extends": "conaclos"
-    }
 }
 ```
 
@@ -90,8 +57,19 @@ e.g. if you prefer `esnext-base` you just need to replace *conaclos* with
     "extends": "conaclos/esnext-base"
 }
 ```
+If you like [standardJS](http://standardjs.com/) styling convention, you can
+combine it with a basic configuration file:
+```json
+{
+    "extends": [
+        "conaclos/esnext-base",
+        "standard"
+    ]
+}
+```
+Don't forget to add "standard" as dev. dependency.
 
-Always place a mod after the main configuration:
+**Always** place a mod after the main configuration:
 ```json
 {
     "extends": [
@@ -101,6 +79,25 @@ Always place a mod after the main configuration:
     ]
 }
 ```
+
+## Install
+
+```bash
+npm install --save-dev eslint-config-conaclos
+```
+
+This package requires ESLint and two plugins:
+
+```bash
+npm install --save-dev eslint eslint-plugin-extra-rules eslint-plugin-promise
+```
+
+## Why this is reported?
+
+**no-console** warns the use of ```console.log``` in your source files as a
+warning.
+```console.log``` should only be used for debugging purpose.
+Prefer use ```console.{info, warn, error}``` for logging purpose.
 
 ## License
 
