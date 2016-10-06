@@ -40,6 +40,7 @@ It reports the use of console and other non-standard features.
 
 [ESLint shareable configuration][esl-sc] may be used with the `extends` property
  of `.eslintrc` files.
+See [ESLint ignore][eslint-ignore] for ignoring files and directories.
 
 Create `.eslintrc' and paste:
 ```json
@@ -80,6 +81,39 @@ Don't forget to add "standard" as dev. dependency.
 }
 ```
 
+### Rule overriding
+
+You can also override a rule if you think it is too strict.
+For example if you think that the use of environment variable in your source
+files is not harmful, you can disable the rule:
+
+```json
+{
+    "extends": "conaclos/esnext-base",
+    "rule": {
+        "no-process-env": 0
+    }
+}
+```
+
+Replace ```0``` with ```1``` to report a warning.
+
+### Globals
+
+If your project uses libraries that populate the global scope, ESLint can report
+ their global variables as undefined (no-def).
+
+ESLint enables both their declaration at a file and project level.
+Their declaration at a file level enables to explicitly declare them as a
+dependency. This is achievable by the use of a special comment on the first line
+of a file:
+
+```js
+/*global gvar1 gvar2 */
+
+// `gvar1' and `gvar2' are considered are defined in the global scope.
+```
+
 ## Install
 
 ```bash
@@ -94,8 +128,7 @@ npm install --save-dev eslint eslint-plugin-extra-rules eslint-plugin-promise
 
 ## Why this is reported?
 
-**no-console** warns the use of ```console.log``` in your source files as a
-warning.
+**no-console** warns the use of ```console.log``` in your source files.
 ```console.log``` should only be used for debugging purpose.
 Prefer use ```console.{info, warn, error}``` for logging purpose.
 
@@ -120,4 +153,6 @@ https://github.com/conventional-changelog/standard-version
 https://img.shields.io/npm/v/eslint-config-conaclos.svg
 [npm-url]:
 https://www.npmjs.com/package/eslint-config-conaclos
+[eslint-ignore]:
+http://eslint.org/docs/user-guide/configuring/http://eslint.org/docs/user-guide/configuring
 
