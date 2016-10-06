@@ -6,7 +6,8 @@ var path = require("path")
 module.exports = {
     "extends": path.join(__dirname, "base.js"),
     plugins: [
-        "promise"
+        "promise",
+        "extra-rules"
     ],
     rules: {
     // Best practice
@@ -152,7 +153,12 @@ module.exports = {
         "yield-star-spacing": [2, "both"],
 
     // Promise plugin
-        "promise/param-names": 2
+        "promise/param-names": 2,
+
+    // Extra-rules plugin
+        "extra-rules/potential-point-free": 2
+            // Use unary adaptater for optional parameter removal
+            // see https://glebbahmutov.com/blog/iterator-callbacks/
     }
 }
 

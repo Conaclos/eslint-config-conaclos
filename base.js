@@ -20,9 +20,6 @@ module.exports = {
     },
         // All browser global should be prefixed by window.
         // Except navigator, document, and console
-    plugins: [
-        "extra-rules"
-    ],
     rules: {
     // Possible error
         "comma-dangle": [2, "never"],
@@ -258,12 +255,7 @@ module.exports = {
             allowParens: true
         }],
             // Redefinable for style
-        "no-useless-constructor": 2,
-
-    // extra-rules plugin
-        "extra-rules/potential-point-free": 2
-            // Use unary adaptater for optional parameter removal
-            // see https://glebbahmutov.com/blog/iterator-callbacks/
+        "no-useless-constructor": 2
     }
 }
 
