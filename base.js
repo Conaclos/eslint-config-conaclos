@@ -88,7 +88,6 @@ module.exports = {
         "consistent-return": 2,
         curly: [2, "multi-line"],
             // Redefinable for style
-        "default-case": 2,
         "dot-notation": 2,
             // Use dot notation instead of square-bracket notation
             // where is possible. Better error detection
