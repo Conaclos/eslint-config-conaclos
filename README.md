@@ -139,18 +139,18 @@ The zlib license
 [esl-sc]: http://eslint.org/docs/developer-guide/shareable-configs
 
 [travis-image]:
-https://img.shields.io/travis/Conaclos/eslint-config-conaclos/master.svg
+https://img.shields.io/travis/Conaclos/eslint-config-conaclos/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/Conaclos/eslint-config-conaclos
 [versioneye-image]:
-https://www.versioneye.com/user/projects/5708d96ffcd19a005185516b/badge.svg?style=flat
+https://www.versioneye.com/user/projects/5708d96ffcd19a005185516b/badge.svg?style=flat-square
 [versioneye-url]:
 https://www.versioneye.com/user/projects/5708d96ffcd19a005185516b
 [sv-image]:
-https://img.shields.io/badge/release-standard%20version-brightgreen.svg
+https://img.shields.io/badge/release-standard%20version-brightgreen.svg?style=flat-square
 [sv-url]:
 https://github.com/conventional-changelog/standard-version
 [npm-image]:
-https://img.shields.io/npm/v/eslint-config-conaclos.svg
+https://img.shields.io/npm/v/eslint-config-conaclos.svg?style=flat-square
 [npm-url]:
 https://www.npmjs.com/package/eslint-config-conaclos
 [eslint-ignore]:
