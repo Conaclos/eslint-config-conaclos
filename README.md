@@ -111,7 +111,7 @@ of a file:
 ```js
 /*global gvar1 gvar2 */
 
-// `gvar1' and `gvar2' are considered are defined in the global scope.
+// `gvar1' and `gvar2' are considered as defined.
 ```
 
 ## Install
