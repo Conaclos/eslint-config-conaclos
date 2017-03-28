@@ -91,8 +91,11 @@ module.exports = {
         "dot-notation": 2,
             // Use dot notation instead of square-bracket notation
             // where is possible. Better error detection
-        eqeqeq: 2,
+        eqeqeq: [2, "always", {
+            "null": "ignore"
+        }],
             // Prefer strict comparison
+            // Enable non-strict comparison against null
         "no-eq-null": 2,
         "guard-for-in": 2,
         "no-alert": 2,
