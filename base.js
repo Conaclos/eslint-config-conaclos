@@ -163,6 +163,7 @@ module.exports = {
         "no-unused-labels": 2,
         "no-useless-call": 2,
         "no-useless-concat": 2,
+        "no-useless-return": 2,
         "no-implicit-globals": 2,
         "no-param-reassign": 2,
             // Read-only function parameters
