@@ -19,7 +19,9 @@ module.exports = {
         "no-multi-str": 2,
         curly: [2, "all"],
             // Redefined
-        "wrap-iife": [2, "inside"],
+        "wrap-iife": [2, "inside", {
+            functionPrototypeMethods: true
+        }],
             // Redefined
         yoda: [2, "never", {
             exceptRange: true,
