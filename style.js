@@ -40,6 +40,7 @@ module.exports = {
         "computed-property-spacing": [2, "never"],
         "eol-last": [2, "unix"],
         "func-call-spacing": 2,
+        "func-name-matching": 2,
         "func-style": [2, "declaration", {
             allowArrowFunctions: true
         }],
