@@ -61,7 +61,7 @@ module.exports = {
             ignoreUrls: true,
             ignoreStrings: true,
             ignoreTemplateLiterals: true,
-            ignorePattern: "(?:\\/[gimuy]*)[),;\s]*$"
+            ignoreRegExpLiterals: true
                 // Don't apply to strings and regex.
                 // Easier error or warning message search
         }],
