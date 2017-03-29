@@ -173,6 +173,8 @@ module.exports = {
         }],
         "no-throw-literal": 2,
             // Prefer exceptions as objects
+        "prefer-promise-reject-errors": 2,
+            // Better debugging trace
         "require-await": 2,
             // Async functions includes an await statment
         "wrap-iife": [2, "any"],
