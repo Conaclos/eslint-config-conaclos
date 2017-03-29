@@ -173,6 +173,8 @@ module.exports = {
         }],
         "no-throw-literal": 2,
             // Prefer exceptions as objects
+        "require-await": 2,
+            // Async functions includes an await statment
         "wrap-iife": [2, "any"],
             // Redefinable for style
 
