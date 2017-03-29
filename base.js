@@ -24,6 +24,7 @@ module.exports = {
     // Possible error
         "comma-dangle": [2, "never"],
             // Avoid issues in legacy parsers
+        "no-compare-neg-zero": 2,
         "no-cond-assign": [2, "always"],
             // A statement should be either an instruction or an expression
         "no-console": [1, {
