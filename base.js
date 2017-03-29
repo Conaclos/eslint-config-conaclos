@@ -150,6 +150,7 @@ module.exports = {
         "no-octal-escape": 2,
         "no-return-assign": [2, "always"],
             // Return is an instruction
+        "no-return-await": 2,
         "no-unmodified-loop-condition": 2,
         "no-extra-bind": 2,
         "no-extra-label": 2,
