@@ -34,6 +34,9 @@ module.exports = {
         "brace-style": [2, "1tbs", {
             allowSingleLine: false
         }],
+        "capitalized-comments": [2, "always", {
+            ignoreConsecutiveComments: true
+        }],
         "comma-spacing": [2, {
             before: false,
             after: true
