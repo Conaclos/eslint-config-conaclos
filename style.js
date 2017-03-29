@@ -146,6 +146,7 @@ module.exports = {
                 ","
             ]
         }],
+        "template-tag-spacing": 2,
 
     // ES6
         "arrow-body-style": [2, "as-needed"],
