@@ -22,8 +22,6 @@ module.exports = {
         // Except navigator, document, and console
     rules: {
     // Possible error
-        "comma-dangle": [2, "never"],
-            // Avoid issues in legacy parsers
         "for-direction": 2,
             // Verify for loop variant
         "no-compare-neg-zero": 2,
@@ -226,6 +224,8 @@ module.exports = {
         "no-sync": 2,
 
     // Stylistic Issues
+        "comma-dangle": [2, "never"],
+            // Avoid issues in legacy parsers
         "no-array-constructor": 2,
             // Avoid ambiguity with a single argument
         "no-bitwise": [2, {
