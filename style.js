@@ -12,9 +12,7 @@ module.exports = {
     rules: {
     // Best practice
         "dot-location": [2, "property"],
-        // "no-else-return": 0,
         "no-floating-decimal": 2,
-        // "no-magic-numbers": 0,
         "no-multi-spaces": 2,
         "no-multi-str": 2,
         curly: [2, "all"],
@@ -30,12 +28,8 @@ module.exports = {
 
     // Stylistic Issues
         "array-bracket-spacing": [2, "never"],
-        // "block-spacing": 0,
         "brace-style": [2, "1tbs", {
             allowSingleLine: false
-        }],
-        "capitalized-comments": [2, "always", {
-            ignoreConsecutiveComments: true
         }],
         "comma-spacing": [2, {
             before: false,
@@ -87,7 +81,6 @@ module.exports = {
         "no-multiple-empty-lines": [2, {
             max: 1
         }],
-        "no-negated-condition": 2,
         "no-tabs": 2,
         "no-trailing-spaces": 2,
         "no-whitespace-before-property": 2,
@@ -132,20 +125,6 @@ module.exports = {
         "space-unary-ops": [2, {
             words: true,
             nonwords: false
-        }],
-        "spaced-comment": [2, "always", {
-            markers: [
-                "!",
-                "eslint",
-                "eslint-disable",
-                "eslint-enable",
-                "eslint-env",
-                "global",
-                "globals",
-                "*package",
-                "!",
-                ","
-            ]
         }],
         "switch-colon-spacing": [2, {
             after: true,
