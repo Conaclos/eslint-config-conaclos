@@ -76,6 +76,7 @@ module.exports = {
             requireParamDescription: false,
             requireReturnDescription: false
         }],
+            // Redefinable for style
         "valid-typeof": 2,
 
     // Best practice

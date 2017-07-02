@@ -10,6 +10,25 @@ module.exports = {
         "extra-rules"
     ],
     rules: {
+    // Possible Error
+        "valid-jsdoc": [2, {
+            prefer: {
+                arg: "param",
+                argument: "param",
+                "return": "returns",
+                virtual: "abstract"
+            },
+            preferType: {
+                Boolean: "boolean",
+                Number: "number",
+                String: "string"
+            },
+            requireReturn: false,
+                // Don't require return tag for procedures
+            requireReturnType: false,
+            requireParamDescription: false,
+            requireReturnDescription: false
+        }],
     // Best practice
         "dot-location": [2, "property"],
         "no-floating-decimal": 2,
