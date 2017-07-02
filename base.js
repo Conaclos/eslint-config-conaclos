@@ -205,10 +205,6 @@ module.exports = {
             vars: "all",
             args: "none"
         }],
-        "no-use-before-define": [2, {
-            functions: false,
-            classes: true
-        }],
 
     // Node
         "handle-callback-err": 1,
