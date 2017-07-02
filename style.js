@@ -124,6 +124,7 @@ module.exports = {
             before: false,
             after: true
         }],
+        "semi-style": [2, "first"],
         "space-before-blocks": [2, "always"],
         "space-before-function-paren": [2, "always"],
         "space-in-parens": [2, "never"],
