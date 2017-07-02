@@ -50,7 +50,7 @@ module.exports = {
             allowArrowFunctions: true
         }],
             // Easier debugging since the main functions have a name
-        indent: [2, 4, {
+        "indent-legacy": [2, 4, {
             SwitchCase: 1
         }],
         "key-spacing": [2, {
