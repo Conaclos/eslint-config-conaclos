@@ -98,7 +98,9 @@ module.exports = {
         }],
         "no-mixed-spaces-and-tabs": 2,
         "no-multiple-empty-lines": [2, {
-            max: 2
+            max: 2,
+            maxBOF: 1,
+            maxEOF: 1
         }],
         "no-tabs": 2,
         "no-trailing-spaces": 2,
