@@ -147,6 +147,10 @@ module.exports = {
                 ","
             ]
         }],
+        "switch-colon-spacing": [2, {
+            after: true,
+            before: false
+        }],
         "template-tag-spacing": 2,
 
     // ES6
