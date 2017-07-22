@@ -57,18 +57,18 @@
     "node": ">=4.2.0"
   },
   "devDependencies": {
-    "ava": "^0.18.2",
+    "ava": "^0.21.0",
     "eslint": "^4.1.1",
-    "eslint-plugin-extra-rules": "^0.6.1",
+    "eslint-plugin-extra-rules": "^0.8.1",
     "eslint-plugin-promise": "^3.5.0",
-    "husky": "^0.13.3",
-    "standard-version": "^3.0.0",
-    "temp-write": "^2.1.0",
+    "husky": "^0.14.3",
+    "standard-version": "^4.2.0",
+    "temp-write": "^3.3.0",
     "validate-commit-msg": "^2.8.0"
   },
   "peerDependencies": {
-    "eslint": ">=4.0.0",
-    "eslint-plugin-extra-rules": ">=0.6.1",
+    "eslint": ">=4.1.0",
+    "eslint-plugin-extra-rules": ">=0.8.0",
     "eslint-plugin-promise": ">=2.0.1"
   }
 }
