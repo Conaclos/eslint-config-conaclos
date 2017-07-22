@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v1.2.4...v2.0.0) (2017-07-22)
+
+
+### Code Refactoring
+
+* **base:** align with eslint-recommended ([ecbd2d4](https://github.com/Conaclos/eslint-config-conaclos/commit/ecbd2d4))
+
+
+### Features
+
+* **base:** check for loop variant ([e94fa72](https://github.com/Conaclos/eslint-config-conaclos/commit/e94fa72))
+* **style:** enable only one space at end and start of a file ([c2a63d6](https://github.com/Conaclos/eslint-config-conaclos/commit/c2a63d6))
+* **style:** ensure consistent spacing in switch cases ([0af5214](https://github.com/Conaclos/eslint-config-conaclos/commit/0af5214))
+* **style:** freedom of comments ([64b60cc](https://github.com/Conaclos/eslint-config-conaclos/commit/64b60cc))
+* **style:** if needed, semicolons should be first ([97ce407](https://github.com/Conaclos/eslint-config-conaclos/commit/97ce407))
+* **style:** stricter JSdoc style ([f3e8c97](https://github.com/Conaclos/eslint-config-conaclos/commit/f3e8c97))
+
+
+### BREAKING CHANGES
+
+* **base:** disable useless char escape
+
+
+
 <a name="1.2.4"></a>
 ## [1.2.4](https://github.com/Conaclos/eslint-config-conaclos/compare/v1.2.3...v1.2.4) (2017-03-29)
 
