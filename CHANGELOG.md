@@ -31,6 +31,19 @@ All notable changes to this project will be documented in this file. See [standa
 ## [1.2.4](https://github.com/Conaclos/eslint-config-conaclos/compare/v1.2.3...v1.2.4) (2017-03-29)
 
 
+### Features
+
+* **base:** await function contains at least one await ([500f620](https://github.com/Conaclos/eslint-config-conaclos/commit/500f620))
+* **base:** enforce the use of Error in Promise#reject ([8c6f61a](https://github.com/Conaclos/eslint-config-conaclos/commit/8c6f61a))
+* **base:** prevent 'return await' statment ([0f8e94e](https://github.com/Conaclos/eslint-config-conaclos/commit/0f8e94e))
+* **base:** prevent comparison with -0 ([a5472a9](https://github.com/Conaclos/eslint-config-conaclos/commit/a5472a9))
+* **base:** prevent useless return ([2f6ef13](https://github.com/Conaclos/eslint-config-conaclos/commit/2f6ef13))
+* **style:** enforce capitalization of the first comment letter ([e03e7be](https://github.com/Conaclos/eslint-config-conaclos/commit/e03e7be))
+* **style:** enforce function name matching ([d2fdb86](https://github.com/Conaclos/eslint-config-conaclos/commit/d2fdb86))
+* **style:** enforce function wrapping with call and apply ([571b99c](https://github.com/Conaclos/eslint-config-conaclos/commit/571b99c))
+* **style:** prevent space between template string and its tag ([6f4c074](https://github.com/Conaclos/eslint-config-conaclos/commit/6f4c074))
+
+
 
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/Conaclos/eslint-config-conaclos/compare/v1.2.2...v1.2.3) (2016-10-06)
@@ -39,6 +52,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/Conaclos/eslint-config-conaclos/compare/v1.2.1...v1.2.2) (2016-10-04)
+
+
+### Features
+
+* **base:** Relax JSDoc linting ([24f54ec](https://github.com/Conaclos/eslint-config-conaclos/commit/24f54ec))
 
 
 
@@ -65,7 +83,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 * max-len regex. Don't apply max-len rule on string and literal regex assigment ([1f54994](https://github.com/Conaclos/eslint-config-conaclos/commit/1f54994))
 
+
 ### Features
 
 * Don't report max-len hint when using literal regex option or using a semi-colon with enabled stuff ([2dace18](https://github.com/Conaclos/eslint-config-conaclos/commit/2dace18))
 * **style:** Weaken max-len within literal objects and function calls ([6eb4e6a](https://github.com/Conaclos/eslint-config-conaclos/commit/6eb4e6a))
+
