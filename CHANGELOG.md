@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v2.0.0...v2.1.0) (2017-09-12)
+
+
+### Features
+
+* **style:** style for line breacks inside function paren ([3a12489](https://github.com/Conaclos/eslint-config-conaclos/commit/3a12489))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v1.2.4...v2.0.0) (2017-07-22)
 
@@ -88,4 +98,3 @@ All notable changes to this project will be documented in this file. See [standa
 
 * Don't report max-len hint when using literal regex option or using a semi-colon with enabled stuff ([2dace18](https://github.com/Conaclos/eslint-config-conaclos/commit/2dace18))
 * **style:** Weaken max-len within literal objects and function calls ([6eb4e6a](https://github.com/Conaclos/eslint-config-conaclos/commit/6eb4e6a))
-
