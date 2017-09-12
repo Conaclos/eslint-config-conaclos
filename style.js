@@ -63,6 +63,7 @@ module.exports = {
             allowArrowFunctions: true
         }],
             // Easier debugging since the main functions have a name
+        "function-paren-newline": [2, "never"],
         "indent-legacy": [2, 4, {
             SwitchCase: 1
         }],
