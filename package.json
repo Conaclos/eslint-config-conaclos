@@ -1,74 +1,75 @@
 {
-  "name": "eslint-config-conaclos",
-  "version": "2.1.0",
-  "title": "Conaclos's ESLint config",
-  "description": "ESLint shareable configuration from Conaclos",
-  "homepage": "https://github.com/Conaclos/eslint-config-conaclos#readme",
-  "license": "Zlib",
-  "author": "Victorien Elvinger (victorien.elvinger.fr)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Conaclos/eslint-config-conaclos.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Conaclos/eslint-config-conaclos/issues"
-  },
-  "files": [
-    "index.js",
-    "base.js",
-    "esnext-base.js",
-    "style.js",
-    "esnext-style.js",
-    "browser-only-mod.js",
-    "node-only-mod.js",
-    "dist-mod.js"
-  ],
-  "main": "index.js",
-  "keywords": [
-    "eslintconfig",
-    "eslint",
-    "linter",
-    "jslint",
-    "jshint",
-    "jscs",
-    "checking",
-    "checker",
-    "quality",
-    "rules",
-    "enforcement",
-    "prevention",
-    "code",
-    "safer",
-    "better",
-    "style",
-    "strict",
-    "adaptable",
-    "modular"
-  ],
-  "scripts": {
-    "lint": "eslint -c style.js ./*.js && eslint -c esnext-style.js ./test",
-    "release": "standard-version --sign",
-    "test:unit": "ava",
-    "test": "npm run lint && npm run test:unit",
-    "commitmsg": "validate-commit-msg",
-    "prepush": "npm test"
-  },
-  "engines": {
-    "node": ">=4.2.0"
-  },
-  "devDependencies": {
-    "ava": "^0.22.0",
-    "eslint": "^4.6.1",
-    "eslint-plugin-extra-rules": "^0.8.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "husky": "^0.14.3",
-    "standard-version": "^4.2.0",
-    "temp-write": "^3.3.0",
-    "validate-commit-msg": "^2.14.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=4.6.0",
-    "eslint-plugin-extra-rules": ">=0.8.0",
-    "eslint-plugin-promise": ">=2.0.1"
-  }
+    "name":  "eslint-config-conaclos",
+    "version":  "2.1.0",
+    "title":  "Conaclos's  ESLint  config",
+    "description":  "ESLint  shareable  configuration  from  Conaclos",
+    "homepage":  "https://github.com/Conaclos/eslint-config-conaclos#readme",
+    "license":  "Zlib",
+    "author":  "Victorien  Elvinger  (victorien.elvinger.fr)",
+    "repository":  {
+        "type":  "git",
+        "url":  "https://github.com/Conaclos/eslint-config-conaclos.git"
+    },
+    "bugs":  {
+        "url":  "https://github.com/Conaclos/eslint-config-conaclos/issues"
+    },
+    "files":  [
+        "index.js",
+        "base.js",
+        "esnext-base.js",
+        "style.js",
+        "esnext-style.js",
+        "browser-only-mod.js",
+        "node-only-mod.js",
+        "dist-mod.js"
+    ],
+    "main":  "index.js",
+    "keywords":  [
+        "eslintconfig",
+        "eslint",
+        "linter",
+        "jslint",
+        "jshint",
+        "jscs",
+        "checking",
+        "checker",
+        "quality",
+        "rules",
+        "enforcement",
+        "prevention",
+        "code",
+        "safer",
+        "better",
+        "style",
+        "strict",
+        "adaptable",
+        "modular"
+    ],
+    "scripts":  {
+        "lint":  "eslint  -c  style.js  ./*.js  &&  eslint  -c  esnext-style.js  ./test",
+        "release":  "standard-version  --sign",
+        "test:unit":  "ava",
+        "test":  "npm  run  lint  &&  npm  run  test:unit",
+        "commitmsg":  "commitlint  -e  $GIT_PARAMS",
+        "prepush":  "npm  test"
+    },
+    "engines":  {
+        "node":  ">=4.2.0"
+    },
+    "devDependencies":  {
+        "@commitlint/cli":  "^5.2.5",
+        "@commitlint/config-conventional":  "^5.2.3",
+        "ava":  "^0.24.0",
+        "eslint":  "^4.6.1",
+        "eslint-plugin-extra-rules":  "^0.8.1",
+        "eslint-plugin-promise":  "^3.5.0",
+        "husky":  "^0.14.3",
+        "standard-version":  "^4.2.0",
+        "temp-write":  "^3.3.0"
+    },
+    "peerDependencies":  {
+        "eslint":  ">=4.6.0",
+        "eslint-plugin-extra-rules":  ">=0.8.0",
+        "eslint-plugin-promise":  ">=2.0.1"
+    }
 }
