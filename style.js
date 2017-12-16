@@ -64,6 +64,7 @@ module.exports = {
         }],
             // Easier debugging since the main functions have a name
         "function-paren-newline": [2, "never"],
+        "implicit-arrow-linebreak": [2, "beside"],
         "indent-legacy": [2, 4, {
             SwitchCase: 1
         }],
@@ -77,6 +78,7 @@ module.exports = {
             after: true
         }],
         "linebreak-style": [2, "unix"],
+        "lines-between-class-members": [2, "always"],
         "max-len": [2, 80, 4, {
             ignoreUrls: true,
             ignoreStrings: true,
