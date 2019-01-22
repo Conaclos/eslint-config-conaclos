@@ -143,7 +143,11 @@ module.exports = {
             // Potential oblivion
         "no-with": 2,
         "no-empty-function": [2, {
-            allow: ["arrowFunctions"]
+            allow: [
+                "arrowFunctions",
+                "methods",
+                "constructors"
+            ]
         }],
             // Prefer comment why it is empty
         "no-empty-pattern": 2,
@@ -262,9 +266,8 @@ module.exports = {
         "require-yield": 2,
         "no-confusing-arrow": [2, {
             allowParens: true
-        }],
+        }]
             // Redefinable for style
-        "no-useless-constructor": 2
     }
 }
 
