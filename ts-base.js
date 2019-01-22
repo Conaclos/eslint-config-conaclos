@@ -3,28 +3,38 @@
 var path = require("path")
 
 module.exports = {
-    "extends": [
-        path.join(__dirname, "esnext-base.js"),
-        "plugin:@typescript-eslint/recommended"
+    "extends": path.join(__dirname, "esnext-base.js"),
+    parser: "@typescript-eslint/parser",
+    plugins: [
+        "@typescript-eslint"
     ],
     rules: {
         "no-dupe-class-members": 0,
             // signatures overloadings are reported as duplicated class members.
-        "@typescript-eslint/explicit-member-accessibility": 0,
-        "@typescript-eslint/explicit-function-return-type": 0,
-        "@typescript-eslint/array-type": 0,
+
+        // Obsolete TypeScript
+        "@typescript-eslint/no-angle-bracket-type-assertion": 2,
+
+        // Possible error
+        "no-array-constructor": 0,
+        "@typescript-eslint/no-array-constructor": 2,
         "@typescript-eslint/no-extraneous-class": 2,
-        "@typescript-eslint/no-parameter-properties": 0,
-        "@typescript-eslint/member-delimiter-style": [2, {
-            multiline: {
-                delimiter: "none"
-            }
-        }],
-        "@typescript-eslint/no-use-before-define": [2, {
-            classes: false
-        }],
+        "@typescript-eslint/no-empty-interface": 2,
+        "no-unused-vars": 0,
         "@typescript-eslint/no-unused-vars": [2, {
+            vars: "all",
             args: "none"
-        }]
+        }],
+
+        // Best practice
+        "@typescript-eslint/adjacent-overload-signatures": 2,
+        "@typescript-eslint/ban-types": 2,
+        "@typescript-eslint/no-explicit-any": 2,
+        "@typescript-eslint/no-misused-new": 2,
+        "@typescript-eslint/no-non-null-assertion": 2,
+        "@typescript-eslint/no-object-literal-type-assertion": 2,
+        "@typescript-eslint/no-var-requires": 2,
+        "@typescript-eslint/prefer-interface": 2,
+        "@typescript-eslint/prefer-namespace-keyword": 2
     }
 }

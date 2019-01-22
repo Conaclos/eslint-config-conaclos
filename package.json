@@ -20,6 +20,7 @@
     "ts-base.js",
     "style.js",
     "esnext-style.js",
+    "ts-style.js",
     "browser-only-mod.js",
     "node-only-mod.js",
     "dist-mod.js"

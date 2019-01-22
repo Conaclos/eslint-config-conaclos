@@ -9,6 +9,7 @@ import esnextBaseConf from "../esnext-base"
 import tsBaseConf from "../ts-base"
 import styleConf from "../style"
 import esnextStyleConf from "../esnext-style"
+import tsStyleConf from "../ts-style"
 import distModConf from "../dist-mod"
 import browserOnlyModConf from "../browser-only-mod"
 import nodeOnlyModConf from "../node-only-mod"
@@ -55,6 +56,13 @@ test("ts-base", (t) => {
 
 test("esnext-style", (t) => {
     const conf = esnextStyleConf
+
+    t.true(isPlain(conf))
+    t.is(eslintResults(conf, "\n").length, 0)
+})
+
+test("ts-style", (t) => {
+    const conf = tsStyleConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "\n").length, 0)
