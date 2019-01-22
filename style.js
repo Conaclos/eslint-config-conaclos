@@ -5,10 +5,6 @@ var path = require("path")
 
 module.exports = {
     "extends": path.join(__dirname, "base.js"),
-    plugins: [
-        "promise",
-        "extra-rules"
-    ],
     rules: {
     // Best practice
         "dot-location": [2, "property"],
@@ -91,14 +87,7 @@ module.exports = {
         "no-trailing-spaces": 2,
         "no-whitespace-before-property": 2,
         "operator-assignment": [2, "never"],
-        "object-curly-newline": [2, {
-            ObjectExpression: {
-                minProperties: 1
-            },
-            ObjectPattern: {
-                multiline: true
-            }
-        }],
+        "object-curly-newline": 2,
         "object-curly-spacing": [2, "never"],
         "object-property-newline": 2,
         "operator-linebreak": [2, "after", {
@@ -147,15 +136,6 @@ module.exports = {
         }],
         "generator-star-spacing": [2, "both"],
         "template-curly-spacing": [2, "never"],
-        "yield-star-spacing": [2, "both"],
-
-    // Promise plugin
-        "promise/param-names": 2,
-
-    // Extra-rules plugin
-        "extra-rules/potential-point-free": 2
-            // Use unary adaptater for optional parameter removal
-            // see https://glebbahmutov.com/blog/iterator-callbacks/
+        "yield-star-spacing": [2, "both"]
     }
 }
-

@@ -117,13 +117,7 @@ of a file:
 ## Install
 
 ```bash
-npm install --save-dev eslint-config-conaclos
-```
-
-This package requires ESLint and two plugins:
-
-```bash
-npm install --save-dev eslint eslint-plugin-extra-rules eslint-plugin-promise
+npm install --save-dev eslint eslint-config-conaclos
 ```
 
 ## Why this is reported?
