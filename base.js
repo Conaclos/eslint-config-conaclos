@@ -229,7 +229,6 @@ module.exports = {
         "no-continue": 2,
         "no-new-object": 2,
             // Prefer literal syntax
-        "no-nested-ternary": 2,
         "one-var": [2, {
             initialized: "never"
         }],
