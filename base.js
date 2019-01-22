@@ -37,7 +37,9 @@ module.exports = {
             ]
         }],
             // Only assertions and logging facilities should be in the source
-        "no-constant-condition": 2,
+        "no-constant-condition": [2, {
+            checkLoops: false
+        }],
         "no-control-regex": 2,
         "no-debugger": 1,
         "no-dupe-args": 2,
