@@ -235,11 +235,6 @@ module.exports = {
         }],
             // One declaration for each initialized variable
         // Harmful features
-        "no-underscore-dangle": [2, {
-            allowAfterThis: true,
-            allowAfterSuper: true
-        }],
-            // Variables prefixed with an underscore should only be fields
         "no-unneeded-ternary": [2, {
             defaultAssignment: false
         }],
