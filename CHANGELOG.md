@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v2.2.0...v2.3.0) (2019-01-22)
+
+
+### Features
+
+* **base:** avoid subtle race conditions with async codes ([cf90eaa](https://github.com/Conaclos/eslint-config-conaclos/commit/cf90eaa))
+* **base:** disable multi code point char in regex ([3857c34](https://github.com/Conaclos/eslint-config-conaclos/commit/3857c34))
+* **base:** enable bitwise operators ([419ef73](https://github.com/Conaclos/eslint-config-conaclos/commit/419ef73))
+* **base:** forbid async executor for promises ([7dc90ef](https://github.com/Conaclos/eslint-config-conaclos/commit/7dc90ef))
+* **base:** forbid useless catch clauses ([5529367](https://github.com/Conaclos/eslint-config-conaclos/commit/5529367))
+* **ts-base:** add typescript support ([3312360](https://github.com/Conaclos/eslint-config-conaclos/commit/3312360))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v2.1.0...v2.2.0) (2017-12-16)
 
