@@ -170,8 +170,6 @@ module.exports = {
         "no-useless-escape": 2,
         "no-useless-return": 2,
         "no-implicit-globals": 2,
-        "no-param-reassign": 2,
-            // Read-only function parameters
         "no-redeclare": [2, {
             builtinGlobals: true
         }],
