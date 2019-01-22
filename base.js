@@ -180,6 +180,7 @@ module.exports = {
             // Better debugging trace
         "require-await": 2,
             // Async functions includes an await statment
+        "require-unicode-regexp": 2,
         "wrap-iife": [2, "any"],
             // Redefinable for style
 

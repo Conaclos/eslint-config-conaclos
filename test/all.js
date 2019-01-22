@@ -31,7 +31,7 @@ test("style-max-len", (t) => {
     const code = '"use strict"\nconst t = %s\nconsole.info(t)\n'
     const largeJsNumber = "1".repeat(80)
     const largeJsString = util.format('"%s"', largeJsNumber)
-    const largeJsRegex = util.format("/%s/gi", largeJsNumber)
+    const largeJsRegex = util.format("/%s/giu", largeJsNumber)
 
     t.is(eslintResults(conf, util.format(code, largeJsString)).length, 0)
     t.is(eslintResults(conf, util.format(code, largeJsRegex)).length, 0)
