@@ -8,9 +8,9 @@ module.exports = {
         sourceType: "module"
     },
     rules: {
+        "comma-dangle": 0,
         "no-var": 2,
         "prefer-const": 2,
         "prefer-numeric-literals": 2
     }
 }
-
