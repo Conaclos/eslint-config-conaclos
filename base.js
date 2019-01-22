@@ -165,6 +165,7 @@ module.exports = {
         "no-unused-expressions": 2,
         "no-unused-labels": 2,
         "no-useless-call": 2,
+        "no-useless-catch": 2,
         "no-useless-concat": 2,
         "no-useless-escape": 2,
         "no-useless-return": 2,
