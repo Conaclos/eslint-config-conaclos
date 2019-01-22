@@ -6,6 +6,7 @@ import util from "util"
 
 import baseConf from "../base"
 import esnextBaseConf from "../esnext-base"
+import tsBaseConf from "../ts-base"
 import styleConf from "../style"
 import esnextStyleConf from "../esnext-style"
 import distModConf from "../dist-mod"
@@ -40,6 +41,13 @@ test("style-max-len", (t) => {
 
 test("esnext-base", (t) => {
     const conf = esnextBaseConf
+
+    t.true(isPlain(conf))
+    t.is(eslintResults(conf, "").length, 0)
+})
+
+test("ts-base", (t) => {
+    const conf = tsBaseConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "").length, 0)

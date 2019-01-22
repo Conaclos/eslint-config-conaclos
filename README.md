@@ -12,16 +12,19 @@ This package provides gradual and personal ESLint sharable configurations.
 
 ### Configurations
 
-The package proposes 4 configurations and 3 mods, including 2 basic
+The package proposes 5 configurations and 3 mods, including 3 basic
 configurations and 2 more personal (styling rules).
 
-The basic one (base or esnext-base) can be combined with another sharable
-configuration such as standardJS (see the usage section).
+The basic ones (base, esnext-base, ts-base) can be combined with another
+ sharable configuration such as standardJS (see the usage section).
 
-**base** is for an ES5-compliant project.
+**base** is for an ES5-compliant projects.
 
-Prefer use **esnext-base** For an ES2015 (ES6) or ES2016+ project. It enforces
+Prefer use **esnext-base** for an ES2015 (ES6) or ES2016+ projects. It enforces
 the use of ES2015 (ES6) features.
+
+Prefer use **ts-base** for TypeScript projects. It uses TypeScript specific
+ linting rules.
 
 **style** and **esnext-style** respectively extends **base** and **esnext-base**
 with more personal rules (4 spaces indentation, ...).
@@ -118,6 +121,12 @@ of a file:
 
 ```bash
 npm install --save-dev eslint eslint-config-conaclos
+```
+
+Alternatively if you use TypeScript:
+
+```bash
+npm install --save-dev eslint eslint-config-conaclos @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
 ## Why this is reported?
