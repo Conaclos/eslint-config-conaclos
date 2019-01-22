@@ -24,6 +24,7 @@ module.exports = {
     // Possible error
         "for-direction": 2,
             // Verify for loop variant
+        "no-async-promise-executor": 2,
         "no-compare-neg-zero": 2,
         "no-cond-assign": [2, "always"],
             // A statement should be either an instruction or an expression
