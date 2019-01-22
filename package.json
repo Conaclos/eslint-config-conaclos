@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-conaclos",
   "version": "2.2.0",
-  "title": "Conaclos's  ESLint  config",
-  "description": "ESLint  shareable  configuration  from  Conaclos",
+  "title": "Conaclos's ESLint config",
+  "description": "ESLint shareable configuration from Conaclos",
   "homepage": "https://github.com/Conaclos/eslint-config-conaclos#readme",
   "license": "Zlib",
-  "author": "Victorien  Elvinger  (victorien.elvinger.fr)",
+  "author": "Victorien Elvinger (victorien.elvinger.fr)",
   "repository": {
     "type": "git",
     "url": "https://github.com/Conaclos/eslint-config-conaclos.git"
@@ -46,8 +46,8 @@
     "modular"
   ],
   "scripts": {
-    "lint": "eslint  -c  style.js  ./*.js  &&  eslint  -c  esnext-style.js  ./test",
-    "release": "standard-version  --sign",
+    "lint": "eslint -c  style.js ./*.js &&  eslint -c esnext-style.js ./test",
+    "release": "standard-version --sign",
     "test": "npm run lint && ava"
   },
   "engines": {
