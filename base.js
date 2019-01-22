@@ -226,10 +226,6 @@ module.exports = {
             // Avoid issues in legacy parsers
         "no-array-constructor": 2,
             // Avoid ambiguity with a single argument
-        "no-bitwise": [2, {
-            int32Hint: true
-        }],
-            // Allow truncation with bitwise or
         "no-continue": 2,
         "no-new-object": 2,
             // Prefer literal syntax
@@ -267,4 +263,3 @@ module.exports = {
             // Redefinable for style
     }
 }
-
