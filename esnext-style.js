@@ -11,4 +11,3 @@ module.exports = {
         "prefer-arrow-callback": 2
     }
 }
-

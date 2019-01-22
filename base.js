@@ -4,7 +4,7 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 7,
         ecmaFeatures: {
-            experimentalObjectRestSpread: true,
+            ecmaVersion: 2018,
             jsx: true
         }
     },
@@ -69,14 +69,6 @@ module.exports = {
         "no-unreachable": 2,
         "no-unsafe-negation": 2,
         "use-isnan": 2,
-        "valid-jsdoc": [2, {
-            requireReturn: false,
-                // Don't require return tag for procedures
-            requireReturnType: false,
-            requireParamDescription: false,
-            requireReturnDescription: false
-        }],
-            // Redefinable for style
         "valid-typeof": 2,
 
     // Best practice
@@ -192,7 +184,6 @@ module.exports = {
             // Redefinable in esnext
 
     // Variables
-        "no-catch-shadow": 2,
         "no-label-var": 2,
         "no-restricted-globals": [2, "event"],
         "no-shadow": [2, {

@@ -10,25 +10,6 @@ module.exports = {
         "extra-rules"
     ],
     rules: {
-    // Possible Error
-        "valid-jsdoc": [2, {
-            prefer: {
-                arg: "param",
-                argument: "param",
-                "return": "returns",
-                virtual: "abstract"
-            },
-            preferType: {
-                Boolean: "boolean",
-                Number: "number",
-                String: "string"
-            },
-            requireReturn: false,
-                // Don't require return tag for procedures
-            requireReturnType: false,
-            requireParamDescription: false,
-            requireReturnDescription: false
-        }],
     // Best practice
         "dot-location": [2, "property"],
         "no-floating-decimal": 2,
@@ -65,8 +46,9 @@ module.exports = {
             // Easier debugging since the main functions have a name
         "function-paren-newline": [2, "never"],
         "implicit-arrow-linebreak": [2, "beside"],
-        "indent-legacy": [2, 4, {
-            SwitchCase: 1
+        indent: [2, 4, {
+            SwitchCase: 1,
+            ignoreComments: true
         }],
         "key-spacing": [2, {
             beforeColon: false,
