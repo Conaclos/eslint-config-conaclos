@@ -11,6 +11,7 @@ module.exports = {
         "no-dupe-class-members": 0,
             // signatures overloadings are reported as duplicated class members.
         "@typescript-eslint/explicit-member-accessibility": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
         "@typescript-eslint/array-type": 0,
         "@typescript-eslint/no-extraneous-class": 2,
         "@typescript-eslint/no-parameter-properties": 0,
