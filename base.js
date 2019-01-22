@@ -70,6 +70,7 @@ module.exports = {
             // two expressions
         "no-unreachable": 2,
         "no-unsafe-negation": 2,
+        "require-atomic-updates": 2,
         "use-isnan": 2,
         "valid-typeof": 2,
 
