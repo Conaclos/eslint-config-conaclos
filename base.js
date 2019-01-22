@@ -56,6 +56,8 @@ module.exports = {
         "no-invalid-regexp": 2,
         "no-irregular-whitespace": 2,
             // Avoid issues with ECMAScript 5 parsers
+        "no-misleading-character-class": 2,
+            // Disable multiple code point characters in regex character class
         "no-sparse-arrays": 2,
             // Avoid issues with some parsers
             // e.g [0,,]
