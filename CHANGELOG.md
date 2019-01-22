@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.5.0"></a>
+# [2.5.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v2.4.0...v2.5.0) (2019-01-22)
+
+
+### Features
+
+* **base:** enable infinite loops ([9af50f7](https://github.com/Conaclos/eslint-config-conaclos/commit/9af50f7))
+* **base:** enable nested ternary ([03bd0d8](https://github.com/Conaclos/eslint-config-conaclos/commit/03bd0d8))
+* **base:** enable param reassign ([4c43f5c](https://github.com/Conaclos/eslint-config-conaclos/commit/4c43f5c))
+* **ts-base:** separate ts-base and ts-style ([c923281](https://github.com/Conaclos/eslint-config-conaclos/commit/c923281))
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v2.3.1...v2.4.0) (2019-01-22)
 
