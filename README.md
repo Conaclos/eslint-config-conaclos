@@ -52,13 +52,13 @@ Create `.eslintrc' and paste:
 }
 ```
 
-By default the configuration `style` is used.
+By default the configuration `esnext-base` is used.
 You can choose another configuration.
-e.g. if you prefer `esnext-base` you just need to replace *conaclos* with
- *conaclos/esnext-base*:
+e.g. if you prefer `ts-base` you just need to replace *conaclos* with
+ *conaclos/ts-base*:
 ```json
 {
-    "extends": "conaclos/esnext-base"
+    "extends": "conaclos/ts-base"
 }
 ```
 If you like [standardJS](http://standardjs.com/) styling convention, you can
@@ -66,7 +66,7 @@ combine it with a basic configuration file:
 ```json
 {
     "extends": [
-        "conaclos/esnext-base",
+        "conaclos",
         "standard"
     ]
 }
@@ -77,7 +77,7 @@ Don't forget to add "standard" as dev. dependency.
 ```json
 {
     "extends": [
-        "conaclos/esnext-base",
+        "conaclos",
         "conaclos/dist-mod",
         "conaclos/browser-only-mod"
     ]
@@ -92,7 +92,7 @@ files is not harmful, you can disable the rule:
 
 ```json
 {
-    "extends": "conaclos/esnext-base",
+    "extends": "conaclos",
     "rule": {
         "no-process-env": 0
     }
