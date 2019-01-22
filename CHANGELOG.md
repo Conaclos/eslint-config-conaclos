@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/Conaclos/eslint-config-conaclos/compare/v2.3.1...v2.4.0) (2019-01-22)
+
+
+### Features
+
+* **base:** enable underscore dangles ([d537043](https://github.com/Conaclos/eslint-config-conaclos/commit/d537043))
+* **ts-base:** enable function with return type inference ([774d0c6](https://github.com/Conaclos/eslint-config-conaclos/commit/774d0c6))
+
+
+
 <a name="2.3.1"></a>
 ## [2.3.1](https://github.com/Conaclos/eslint-config-conaclos/compare/v2.3.0...v2.3.1) (2019-01-22)
 
