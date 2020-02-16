@@ -86,7 +86,9 @@ module.exports = {
         "valid-typeof": 2,
 
     // Best practice
-        "accessor-pairs": 2,
+        "accessor-pairs": [2, {
+            enforceForClassMembers: true
+        }],
             // Ensure consistent interface
             // A property setter must be coupled to a property getter
         "array-callback-return": 2,
