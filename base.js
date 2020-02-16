@@ -69,6 +69,7 @@ module.exports = {
         "no-obj-calls": 2,
         "no-regex-spaces": 2,
             // Prevent against inadvertent spaces
+        "no-setter-return": 2,
         "no-template-curly-in-string": 2,
         "no-unexpected-multiline": 2,
             // Prevent against the parsing of a single expression as
