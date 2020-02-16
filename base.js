@@ -43,6 +43,7 @@ module.exports = {
         "no-control-regex": 2,
         "no-debugger": 1,
         "no-dupe-args": 2,
+        "no-dupe-else-if": 2,
         "no-dupe-keys": 2,
         "no-duplicate-case": 2,
         "no-empty-character-class": 2,
