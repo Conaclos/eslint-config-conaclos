@@ -52,6 +52,7 @@ module.exports = {
             // Ensure to add a comment into an empty block
         "no-ex-assign": 2,
         "no-func-assign": 2,
+        "no-import-assign": 2,
         "no-extra-boolean-cast": 2,
         "no-extra-parens": [2, "functions"],
         "no-extra-semi": 2,
