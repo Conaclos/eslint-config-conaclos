@@ -262,9 +262,7 @@ module.exports = {
             ignoreDestructuring: true
         }],
         "require-yield": 2,
-        "no-confusing-arrow": [2, {
-            allowParens: true
-        }]
+        "no-confusing-arrow": 2
             // Redefinable for style
     }
 }
