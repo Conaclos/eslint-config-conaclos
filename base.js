@@ -13,10 +13,10 @@ module.exports = {
         node: true
     },
     globals: {
-        console: true,
-        document: true,
-        navigator: true,
-        window: true
+        console: "readonly",
+        document: "readonly",
+        navigator: "readonly",
+        window: "readonly"
     },
         // All browser global should be prefixed by window.
         // Except navigator, document, and console
