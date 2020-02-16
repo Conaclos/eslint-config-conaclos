@@ -55,7 +55,6 @@ module.exports = {
         "no-func-assign": 2,
         "no-import-assign": 2,
         "no-extra-boolean-cast": 2,
-        "no-extra-semi": 2,
         "no-inner-declarations": 2,
             // Prevent against confusing scope
         "no-invalid-regexp": 2,
