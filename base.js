@@ -27,8 +27,8 @@ module.exports = {
         "getter-return": 2,
         "no-async-promise-executor": 2,
         "no-compare-neg-zero": 2,
-        "no-cond-assign": [2, "always"],
-            // A statement should be either an instruction or an expression
+        "no-cond-assign": 2,
+            // Enable cond-assign only if it is surrounded by parentheses
         "no-console": [1, {
             allow: [
                 "assert",
