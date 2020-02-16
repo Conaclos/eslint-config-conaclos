@@ -13,7 +13,7 @@ module.exports = {
             // signatures overloadings are reported as duplicated class members.
 
         // Obsolete TypeScript
-        "@typescript-eslint/no-angle-bracket-type-assertion": 2,
+        "@typescript-eslint/consistent-type-assertions": 2,
 
         // Possible error
         "no-array-constructor": 0,
@@ -32,9 +32,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": 2,
         "@typescript-eslint/no-misused-new": 2,
         "@typescript-eslint/no-non-null-assertion": 2,
-        "@typescript-eslint/no-object-literal-type-assertion": 2,
         "@typescript-eslint/no-var-requires": 2,
-        "@typescript-eslint/prefer-interface": 2,
         "@typescript-eslint/prefer-namespace-keyword": 2
     }
 }

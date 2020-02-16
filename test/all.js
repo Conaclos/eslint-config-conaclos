@@ -51,7 +51,7 @@ test("ts-base", (t) => {
     const conf = tsBaseConf
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, "").length, 0)
+    t.is(eslintResults(conf, "", "@typescript-eslint/parser").length, 0)
 })
 
 test("esnext-style", (t) => {
@@ -65,7 +65,7 @@ test("ts-style", (t) => {
     const conf = tsStyleConf
 
     t.true(isPlain(conf))
-    t.is(eslintResults(conf, "\n").length, 0)
+    t.is(eslintResults(conf, "\n", "@typescript-eslint/parser").length, 0)
 })
 
 test("dist-mod", (t) => {
@@ -106,8 +106,9 @@ function isPlain (o) {
  * @return {string[]} List of reported errors and warning of the execution of
  *      ESLint on `aCode' with `aConf' as configuration
  */
-function eslintResults (aConf, aCode) {
+function eslintResults (aConf, aCode, parser = "espree") {
     const cli = new eslint.CLIEngine({
+        parser: parser,
         useEslintrc: false,
         configFile: tempWrite.sync(JSON.stringify(aConf)),
     })
