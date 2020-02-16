@@ -18,9 +18,6 @@
     "base.js",
     "esnext-base.js",
     "ts-base.js",
-    "style.js",
-    "esnext-style.js",
-    "ts-style.js",
     "browser-only-mod.js",
     "node-only-mod.js",
     "dist-mod.js"
@@ -42,13 +39,12 @@
     "code",
     "safer",
     "better",
-    "style",
     "strict",
     "adaptable",
     "modular"
   ],
   "scripts": {
-    "lint": "eslint -c  style.js ./*.js &&  eslint -c esnext-style.js ./test",
+    "lint": "eslint -c  base.js ./*.js &&  eslint -c esnext-base.js ./test",
     "release": "standard-version --sign",
     "test": "npm run lint && ava"
   },

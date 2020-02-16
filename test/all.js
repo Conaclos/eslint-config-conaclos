@@ -2,14 +2,10 @@
 import test from "ava"
 import eslint from "eslint"
 import tempWrite from "temp-write"
-import util from "util"
 
 import baseConf from "../base"
 import esnextBaseConf from "../esnext-base"
 import tsBaseConf from "../ts-base"
-import styleConf from "../style"
-import esnextStyleConf from "../esnext-style"
-import tsStyleConf from "../ts-style"
 import distModConf from "../dist-mod"
 import browserOnlyModConf from "../browser-only-mod"
 import nodeOnlyModConf from "../node-only-mod"
@@ -19,25 +15,6 @@ test("base", (t) => {
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, '"use strict";').length, 0)
-})
-
-test("style", (t) => {
-    const conf = styleConf
-
-    t.true(isPlain(conf))
-    t.is(eslintResults(conf, '"use strict"\n').length, 0)
-})
-
-test("style-max-len", (t) => {
-    const conf = styleConf
-    const code = '"use strict"\nconst t = %s\nconsole.info(t)\n'
-    const largeJsNumber = "1".repeat(80)
-    const largeJsString = util.format('"%s"', largeJsNumber)
-    const largeJsRegex = util.format("/%s/giu", largeJsNumber)
-
-    t.is(eslintResults(conf, util.format(code, largeJsString)).length, 0)
-    t.is(eslintResults(conf, util.format(code, largeJsRegex)).length, 0)
-    t.is(eslintResults(conf, util.format(code, largeJsNumber))[0], "max-len")
 })
 
 test("esnext-base", (t) => {
@@ -52,20 +29,6 @@ test("ts-base", (t) => {
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "", "@typescript-eslint/parser").length, 0)
-})
-
-test("esnext-style", (t) => {
-    const conf = esnextStyleConf
-
-    t.true(isPlain(conf))
-    t.is(eslintResults(conf, "\n").length, 0)
-})
-
-test("ts-style", (t) => {
-    const conf = tsStyleConf
-
-    t.true(isPlain(conf))
-    t.is(eslintResults(conf, "\n", "@typescript-eslint/parser").length, 0)
 })
 
 test("dist-mod", (t) => {

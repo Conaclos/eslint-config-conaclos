@@ -12,11 +12,7 @@ This package provides gradual and personal ESLint sharable configurations.
 
 ### Configurations
 
-The package proposes 6 configurations and 3 mods, including 3 basic
-configurations and 3 more personal (styling rules).
-
-The basic ones (base, esnext-base, ts-base) can be combined with another
- sharable configuration such as standardJS (see the usage section).
+The package proposes 3 configurations and 3 mods.
 
 **base** is for an ES5-compliant projects.
 
@@ -26,9 +22,6 @@ the use of ES2015 (ES6) features.
 Prefer use **ts-base** for TypeScript projects. It uses TypeScript specific
  linting rules.
 
-**style**, **esnext-style**, and **ts-style** respectively extends
- **base**, **esnext-base**, and **ts-base** with more personal rules
- (4 spaces indentation, ...).
 
 ### Mods
 
