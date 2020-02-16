@@ -141,6 +141,7 @@ module.exports = {
             // Disallow lexical declarations in case and default clauses.
             // The scope of a lexical declaration in these clauses is
             // the entire switch block
+        "no-constructor-return": 2,
         "no-div-regex": 2,
         "no-warning-comments": [1, {
             location: "start",
