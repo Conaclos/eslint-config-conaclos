@@ -55,7 +55,6 @@ module.exports = {
         "no-func-assign": 2,
         "no-import-assign": 2,
         "no-extra-boolean-cast": 2,
-        "no-extra-parens": [2, "functions"],
         "no-extra-semi": 2,
         "no-inner-declarations": [2, "functions"],
             // Prevent against confusing scope
