@@ -79,7 +79,10 @@ module.exports = {
             enforceForOrderingRelations: true
         }],
         "require-atomic-updates": 2,
-        "use-isnan": 2,
+        "use-isnan": [2, {
+            enforceForSwitchCase: true,
+            enforceForIndexOf: true
+        }],
         "valid-typeof": 2,
 
     // Best practice
