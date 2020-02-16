@@ -75,7 +75,9 @@ module.exports = {
             // Prevent against the parsing of a single expression as
             // two expressions
         "no-unreachable": 2,
-        "no-unsafe-negation": 2,
+        "no-unsafe-negation": [2, {
+            enforceForOrderingRelations: true
+        }],
         "require-atomic-updates": 2,
         "use-isnan": 2,
         "valid-typeof": 2,
