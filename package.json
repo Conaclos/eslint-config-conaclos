@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-conaclos",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "title": "Conaclos's ESLint config",
   "description": "ESLint shareable configuration from Conaclos",
   "homepage": "https://github.com/Conaclos/eslint-config-conaclos#readme",
