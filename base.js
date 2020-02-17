@@ -3,24 +3,17 @@
 module.exports = {
     "extends": "eslint:recommended",
     parserOptions: {
-        ecmaVersion: 7,
         ecmaFeatures: {
             ecmaVersion: 2018,
             jsx: true
         }
     },
     env: {
-        es6: true,
-        node: true
+        commonjs: true,
+            // support for bundlers
+        es2020: true,
+        "shared-node-browser": true
     },
-    globals: {
-        console: "readonly",
-        document: "readonly",
-        navigator: "readonly",
-        window: "readonly"
-    },
-        // All browser global should be prefixed by window.
-        // Except navigator, document, and console
     rules: {
     // Possible error
         "no-console": [1, {

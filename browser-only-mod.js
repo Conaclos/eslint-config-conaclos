@@ -1,8 +1,12 @@
 "use strict"
 
 module.exports = {
-    env: {
-        node: false
+    globals: {
+        document: "readonly",
+        navigator: "readonly",
+        window: "readonly"
     }
+        // All browser-specific globals should be prefixed by window.
+        // Except navigator, and document
 }
 
