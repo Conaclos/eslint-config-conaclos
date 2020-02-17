@@ -32,6 +32,10 @@ module.exports = {
         "@typescript-eslint/no-unused-vars": [2, {
             vars: "all",
             args: "none"
-        }]
+        }],
+
+        // Reset
+        "consistent-return": 0
+            // Typescript compiler checks are more accurate.
     }
 }
