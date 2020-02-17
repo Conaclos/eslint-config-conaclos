@@ -65,10 +65,6 @@ module.exports = {
         "no-alert": 2,
         "no-caller": 2,
             // Don't use non-standard arguments.{caller, callee}
-        "no-case-declarations": 2,
-            // Disallow lexical declarations in case and default clauses.
-            // The scope of a lexical declaration in these clauses is
-            // the entire switch block
         "no-constructor-return": 2,
         "no-div-regex": 2,
         "no-empty-function": [2, {
@@ -84,10 +80,9 @@ module.exports = {
             // Prevent against missing break statement
         "no-eval": 2,
         "no-extend-native": 2,
-        "no-fallthrough": 2,
         "no-implicit-coercion": 2,
-        "no-implied-eval": 2,
         "no-implicit-globals": 2,
+        "no-implied-eval": 2,
         "no-invalid-this": 2,
         "no-iterator": 2,
             // Don't use non-standard __iterator__
@@ -107,9 +102,6 @@ module.exports = {
         "no-octal-escape": 2,
         "no-proto": 2,
             // Don't use non-standard __proto__
-        "no-redeclare": [2, {
-            builtinGlobals: true
-        }],
         "no-return-assign": [2, "always"],
             // Return is an instruction
         "no-return-await": 2,
@@ -119,6 +111,11 @@ module.exports = {
             // Prevent against comma instruction sequences
         "no-throw-literal": 2,
             // Prefer exceptions as objects
+        "no-unmodified-loop-condition": 2,
+        "no-unused-expressions": 2,
+        "no-useless-call": 2,
+        "no-useless-concat": 2,
+        "no-useless-return": 2,
         "no-warning-comments": [1, {
             location: "start",
             terms: [
@@ -126,11 +123,6 @@ module.exports = {
             ]
         }],
             // Potential oblivion
-        "no-unmodified-loop-condition": 2,
-        "no-unused-expressions": 2,
-        "no-useless-call": 2,
-        "no-useless-concat": 2,
-        "no-useless-return": 2,
         "prefer-promise-reject-errors": 2,
             // Better debugging trace
         radix: 2,
@@ -149,8 +141,7 @@ module.exports = {
         "no-label-var": 2,
         "no-restricted-globals": [2, "event"],
         "no-shadow": [2, {
-            builtinGlobals: true,
-            hoist: "functions"
+            builtinGlobals: true
         }],
             // Prevent against ambiguity
         "no-undef-init": 2,
