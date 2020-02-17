@@ -38,7 +38,8 @@ module.exports = {
         }],
 
         // Reset
+        "array-callback-return": 0,
         "consistent-return": 0
-            // Typescript compiler checks are more accurate.
+            // TSC checks are more accurate.
     }
 }
