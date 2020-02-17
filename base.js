@@ -166,7 +166,6 @@ module.exports = {
             // Avoid issues in legacy parsers
         "no-array-constructor": 2,
             // Avoid ambiguity with a single argument
-        "no-continue": 2,
         "no-new-object": 2,
             // Prefer literal syntax
         "one-var": [2, {
