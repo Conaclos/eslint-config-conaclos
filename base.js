@@ -160,9 +160,6 @@ module.exports = {
         "no-new-require": 2,
         "no-path-concat": 2,
             // Prevent against OS dependency
-        "no-process-env": 2,
-            // Prevent against dependencies on external environment variables
-        "no-process-exit": 2,
 
     // Stylistic Issues
         "comma-dangle": [2, "never"],
