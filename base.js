@@ -163,7 +163,6 @@ module.exports = {
         "no-process-env": 2,
             // Prevent against dependencies on external environment variables
         "no-process-exit": 2,
-        "no-sync": 2,
 
     // Stylistic Issues
         "comma-dangle": [2, "never"],
