@@ -168,10 +168,6 @@ module.exports = {
             // Avoid ambiguity with a single argument
         "no-new-object": 2,
             // Prefer literal syntax
-        "one-var": [2, {
-            initialized: "never"
-        }],
-            // One declaration for each initialized variable
         // Harmful features
         "no-unneeded-ternary": [2, {
             defaultAssignment: false
