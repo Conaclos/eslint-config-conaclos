@@ -63,44 +63,14 @@ module.exports = {
             // Prefer strict comparison
             // Enable non-strict comparison against null
         "no-alert": 2,
-        "no-eval": 2,
-        "no-extend-native": 2,
-        "no-implicit-coercion": 2,
-        "no-implied-eval": 2,
-        "no-invalid-this": 2,
-        "no-labels": [2, {
-            allowLoop: false,
-            allowSwitch: false
-        }],
-        "no-loop-func": 2,
-            // Make read-only the global variables
-        "no-new-func": 2,
-        "no-new-wrappers": 2,
-            // Avoid issues with typeof
-        "no-script-url": 2,
-        radix: 2,
-            // Avoid octal issues with parseInt
-        "no-sequences": 2,
-            // Prevent against comma instruction sequences
         "no-caller": 2,
             // Don't use non-standard arguments.{caller, callee}
-        "no-iterator": 2,
-            // Don't use non-standard __iterator__
-        "no-proto": 2,
-            // Don't use non-standard __proto__
         "no-case-declarations": 2,
             // Disallow lexical declarations in case and default clauses.
             // The scope of a lexical declaration in these clauses is
             // the entire switch block
         "no-constructor-return": 2,
         "no-div-regex": 2,
-        "no-warning-comments": [1, {
-            location: "start",
-            terms: [
-                "debug"
-            ]
-        }],
-            // Potential oblivion
         "no-empty-function": [2, {
             allow: [
                 "arrowFunctions",
@@ -109,32 +79,62 @@ module.exports = {
             ]
         }],
             // Prefer comment why it is empty
+        "no-extra-bind": 2,
+        "no-extra-label": 2,
+            // Prevent against missing break statement
+        "no-eval": 2,
+        "no-extend-native": 2,
+        "no-fallthrough": 2,
+        "no-implicit-coercion": 2,
+        "no-implied-eval": 2,
+        "no-implicit-globals": 2,
+        "no-invalid-this": 2,
+        "no-iterator": 2,
+            // Don't use non-standard __iterator__
+        "no-labels": [2, {
+            allowLoop: false,
+            allowSwitch: false
+        }],
+        "no-lone-blocks": 2,
+            // Disallow unnecessary nested blocks
+        "no-loop-func": 2,
+            // Make read-only the global variables
         "no-new": 2,
             // Disallow new For Side Effects
+        "no-new-func": 2,
+        "no-new-wrappers": 2,
+            // Avoid issues with typeof
         "no-octal-escape": 2,
+        "no-proto": 2,
+            // Don't use non-standard __proto__
+        "no-redeclare": [2, {
+            builtinGlobals: true
+        }],
         "no-return-assign": [2, "always"],
             // Return is an instruction
         "no-return-await": 2,
-        "no-unmodified-loop-condition": 2,
-        "no-extra-bind": 2,
-        "no-extra-label": 2,
-        "no-fallthrough": 2,
-            // Prevent against missing break statement
-        "no-lone-blocks": 2,
-            // Disallow unnecessary nested blocks
+        "no-script-url": 2,
         "no-self-compare": 2,
+        "no-sequences": 2,
+            // Prevent against comma instruction sequences
+        "no-throw-literal": 2,
+            // Prefer exceptions as objects
+        "no-warning-comments": [1, {
+            location: "start",
+            terms: [
+                "debug"
+            ]
+        }],
+            // Potential oblivion
+        "no-unmodified-loop-condition": 2,
         "no-unused-expressions": 2,
         "no-useless-call": 2,
         "no-useless-concat": 2,
         "no-useless-return": 2,
-        "no-implicit-globals": 2,
-        "no-redeclare": [2, {
-            builtinGlobals: true
-        }],
-        "no-throw-literal": 2,
-            // Prefer exceptions as objects
         "prefer-promise-reject-errors": 2,
             // Better debugging trace
+        radix: 2,
+            // Avoid octal issues with parseInt
         "require-await": 2,
             // Async functions includes an await statment
         "require-unicode-regexp": 2,
@@ -197,8 +197,8 @@ module.exports = {
         "no-useless-rename": [2, {
             ignoreDestructuring: true
         }],
-        "require-yield": 2,
-        "no-confusing-arrow": 2
+        "no-confusing-arrow": 2,
             // Redefinable for style
+        "require-yield": 2
     }
 }
