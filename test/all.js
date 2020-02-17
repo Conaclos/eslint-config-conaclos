@@ -7,8 +7,8 @@ import baseConf from "../base"
 import esnextBaseConf from "../esnext-base"
 import tsBaseConf from "../ts-base"
 import distModConf from "../dist-mod"
-import browserOnlyModConf from "../browser-only-mod"
-import nodeOnlyModConf from "../node-only-mod"
+import browserModConf from "../browser-mod"
+import nodeModConf from "../node-mod"
 
 test("base", (t) => {
     const conf = baseConf
@@ -39,14 +39,14 @@ test("dist-mod", (t) => {
 })
 
 test("browser-only-mod", (t) => {
-    const conf = browserOnlyModConf
+    const conf = browserModConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "").length, 0)
 })
 
 test("node-only-mod", (t) => {
-    const conf = nodeOnlyModConf
+    const conf = nodeModConf
 
     t.true(isPlain(conf))
     t.is(eslintResults(conf, "").length, 0)

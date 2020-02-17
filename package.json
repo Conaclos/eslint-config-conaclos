@@ -18,8 +18,8 @@
     "base.js",
     "esnext-base.js",
     "ts-base.js",
-    "browser-only-mod.js",
-    "node-only-mod.js",
+    "browser-mod.js",
+    "node-mod.js",
     "dist-mod.js"
   ],
   "main": "index.js",

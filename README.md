@@ -26,9 +26,9 @@ Prefer use **ts-base** for TypeScript projects. It uses TypeScript specific
 ### Mods
 
 By default the above configurations enable both browser and node environments.
-**browser-only-mod** disable all environments except browser environment.
+**browser-mod** enables browser environment.
 
-**node-only-mod** disable all environments except node environment.
+**node-mod** enables node environment.
 
 **dist-mod** (distribution mod) is suitable for checking your distribution.
 It reports the use of console and other non-standard features.
@@ -73,7 +73,7 @@ Don't forget to add "standard" as dev. dependency.
     "extends": [
         "conaclos",
         "conaclos/dist-mod",
-        "conaclos/browser-only-mod"
+        "conaclos/browser-mod"
     ]
 }
 ```
