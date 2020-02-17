@@ -44,7 +44,7 @@
     "modular"
   ],
   "scripts": {
-    "lint": "eslint -c  base.js ./*.js &&  eslint -c esnext-base.js ./test",
+    "lint": "eslint -c esnext-base.js ./test",
     "release": "standard-version --sign",
     "test": "npm run lint && ava"
   },
