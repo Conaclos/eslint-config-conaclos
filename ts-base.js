@@ -3,7 +3,10 @@
 var path = require("path")
 
 module.exports = {
-    "extends": path.join(__dirname, "esnext-base.js"),
+    "extends": [
+        path.join(__dirname, "esnext-base.js"),
+        "plugin:@typescript-eslint/eslint-recommended"
+    ],
     parser: "@typescript-eslint/parser",
     plugins: [
         "@typescript-eslint"
