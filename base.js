@@ -67,14 +67,6 @@ module.exports = {
             // Don't use non-standard arguments.{caller, callee}
         "no-constructor-return": 2,
         "no-div-regex": 2,
-        "no-empty-function": [2, {
-            allow: [
-                "arrowFunctions",
-                "methods",
-                "constructors"
-            ]
-        }],
-            // Prefer comment why it is empty
         "no-extra-bind": 2,
         "no-extra-label": 2,
             // Prevent against missing break statement

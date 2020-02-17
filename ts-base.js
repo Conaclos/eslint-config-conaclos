@@ -31,16 +31,6 @@ module.exports = {
             // signatures overloadings are reported as duplicated class members.
         "@typescript-eslint/no-dupe-class-members": 2,
 
-        "no-empty-function": 0,
-        "@typescript-eslint/no-empty-function": [2, {
-            allow: [
-                "arrowFunctions",
-                "methods",
-                "constructors"
-            ]
-        }],
-            // Prefer comment why it is empty
-
         "no-unused-vars": 0,
         "@typescript-eslint/no-unused-vars": [2, {
             vars: "all",
