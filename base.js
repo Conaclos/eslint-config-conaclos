@@ -1,6 +1,7 @@
 "use strict"
 
 module.exports = {
+    "extends": "eslint:recommended",
     parserOptions: {
         ecmaVersion: 7,
         ecmaFeatures: {
@@ -22,13 +23,6 @@ module.exports = {
         // Except navigator, document, and console
     rules: {
     // Possible error
-        "for-direction": 2,
-            // Verify for loop variant
-        "getter-return": 2,
-        "no-async-promise-executor": 2,
-        "no-compare-neg-zero": 2,
-        "no-cond-assign": 2,
-            // Enable cond-assign only if it is surrounded by parentheses
         "no-console": [1, {
             allow: [
                 "assert",
@@ -38,42 +32,13 @@ module.exports = {
             ]
         }],
             // Only assertions and logging facilities should be in the source
-        "no-constant-condition": [2, {
-            checkLoops: false
-        }],
-        "no-control-regex": 2,
         "no-debugger": 1,
-        "no-dupe-args": 2,
         "no-dupe-else-if": 2,
-        "no-dupe-keys": 2,
-        "no-duplicate-case": 2,
-        "no-empty-character-class": 2,
-            // Disallow use of empty character classes in RegEx
-        "no-empty": 2,
-            // Ensure to add a comment into an empty block
-        "no-ex-assign": 2,
-        "no-func-assign": 2,
+        "no-extra-semi": 0,
+            // Enable extra semicolons
         "no-import-assign": 2,
-        "no-extra-boolean-cast": 2,
-        "no-inner-declarations": 2,
-            // Prevent against confusing scope
-        "no-invalid-regexp": 2,
-        "no-irregular-whitespace": 2,
-            // Avoid issues with ECMAScript 5 parsers
-        "no-misleading-character-class": 2,
-            // Disable multiple code point characters in regex character class
-        "no-sparse-arrays": 2,
-            // Avoid issues with some parsers
-            // e.g [0,,]
-        "no-obj-calls": 2,
-        "no-regex-spaces": 2,
-            // Prevent against inadvertent spaces
         "no-setter-return": 2,
         "no-template-curly-in-string": 2,
-        "no-unexpected-multiline": 2,
-            // Prevent against the parsing of a single expression as
-            // two expressions
-        "no-unreachable": 2,
         "no-unsafe-negation": [2, {
             enforceForOrderingRelations: true
         }],
@@ -82,7 +47,6 @@ module.exports = {
             enforceForSwitchCase: true,
             enforceForIndexOf: true
         }],
-        "valid-typeof": 2,
 
     // Best practice
         "accessor-pairs": [2, {
@@ -110,7 +74,6 @@ module.exports = {
         "no-alert": 2,
         "no-eval": 2,
         "no-extend-native": 2,
-        "no-global-assign": 2,
         "no-implicit-coercion": 2,
         "no-implied-eval": 2,
         "no-invalid-this": 2,
@@ -123,8 +86,6 @@ module.exports = {
         "no-new-func": 2,
         "no-new-wrappers": 2,
             // Avoid issues with typeof
-        "no-octal": 2,
-            // Avoid historical octal. e.g. 071 is 57
         "no-script-url": 2,
         radix: 2,
             // Avoid octal issues with parseInt
@@ -149,7 +110,6 @@ module.exports = {
             ]
         }],
             // Potential oblivion
-        "no-with": 2,
         "no-empty-function": [2, {
             allow: [
                 "arrowFunctions",
@@ -158,7 +118,6 @@ module.exports = {
             ]
         }],
             // Prefer comment why it is empty
-        "no-empty-pattern": 2,
         "no-new": 2,
             // Disallow new For Side Effects
         "no-octal-escape": 2,
@@ -172,14 +131,10 @@ module.exports = {
             // Prevent against missing break statement
         "no-lone-blocks": 2,
             // Disallow unnecessary nested blocks
-        "no-self-assign": 2,
         "no-self-compare": 2,
         "no-unused-expressions": 2,
-        "no-unused-labels": 2,
         "no-useless-call": 2,
-        "no-useless-catch": 2,
         "no-useless-concat": 2,
-        "no-useless-escape": 2,
         "no-useless-return": 2,
         "no-implicit-globals": 2,
         "no-redeclare": [2, {
@@ -207,9 +162,6 @@ module.exports = {
             hoist: "functions"
         }],
             // Prevent against ambiguity
-        "no-shadow-restricted-names": 2,
-        "no-delete-var": 2,
-        "no-undef": 2,
         "no-undef-init": 2,
             // Disallow use of undefined variable
         "no-unused-vars": [2, {
@@ -250,12 +202,6 @@ module.exports = {
         "unicode-bom": [2, "never"],
 
     // ES6
-        "constructor-super": 2,
-        "no-class-assign": 2,
-        "no-const-assign": 2,
-        "no-dupe-class-members": 2,
-        "no-new-symbol": 2,
-        "no-this-before-super": 2,
         "no-useless-computed-key": 2,
         "no-useless-rename": [2, {
             ignoreDestructuring: true

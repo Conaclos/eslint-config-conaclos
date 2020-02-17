@@ -59,7 +59,7 @@ test("node-only-mod", (t) => {
  */
 function isPlain (o) {
     return typeof o === "object" &&
-        (Object.prototype.isPrototypeOf(o) ||
+        (Reflect.getPrototypeOf(o) === Object.prototype ||
         Reflect.getPrototypeOf(o) === null)
 }
 
