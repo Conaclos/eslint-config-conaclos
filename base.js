@@ -62,7 +62,6 @@ module.exports = {
         }],
             // Prefer strict comparison
             // Enable non-strict comparison against null
-        "guard-for-in": 2,
         "no-alert": 2,
         "no-eval": 2,
         "no-extend-native": 2,
