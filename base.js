@@ -78,10 +78,6 @@ module.exports = {
         "no-invalid-this": 2,
         "no-iterator": 2,
             // Don't use non-standard __iterator__
-        "no-labels": [2, {
-            allowLoop: false,
-            allowSwitch: false
-        }],
         "no-lone-blocks": 2,
             // Disallow unnecessary nested blocks
         "no-loop-func": 2,
