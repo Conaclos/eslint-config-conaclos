@@ -60,14 +60,14 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@typescript-eslint/eslint-plugin": "^2.20.0",
-    "@typescript-eslint/parser": "^2.20.0",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "ava": "^2.4.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "husky": "^4.2.3",
     "standard-version": "^7.1.0",
     "temp-write": "^4.0.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3"
   },
   "peerDependencies": {
     "eslint": ">=5.12.1",
