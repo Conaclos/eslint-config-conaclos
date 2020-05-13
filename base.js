@@ -136,16 +136,6 @@ module.exports = {
             args: "none"
         }],
 
-    // Node
-        "handle-callback-err": 1,
-        "no-mixed-requires": [2, {
-            grouping: true,
-            allowCall: true
-        }],
-        "no-new-require": 2,
-        "no-path-concat": 2,
-            // Prevent against OS dependency
-
     // Stylistic Issues
         "comma-dangle": [2, "never"],
             // Avoid issues in legacy parsers
