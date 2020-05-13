@@ -26,11 +26,8 @@ module.exports = {
         }],
             // Only assertions and logging facilities should be in the source
         "no-debugger": 1,
-        "no-dupe-else-if": 2,
         "no-extra-semi": 0,
             // Enable extra semicolons
-        "no-import-assign": 2,
-        "no-setter-return": 2,
         "no-template-curly-in-string": 2,
         "no-unsafe-negation": [2, {
             enforceForOrderingRelations: true
