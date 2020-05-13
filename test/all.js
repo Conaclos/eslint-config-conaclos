@@ -6,7 +6,6 @@ import eslint from "eslint"
 import baseConf from "../base"
 import esnextBaseConf from "../esnext-base"
 import tsBaseConf from "../ts-base"
-import distModConf from "../dist-mod"
 import browserModConf from "../browser-mod"
 import nodeModConf from "../node-mod"
 
@@ -26,13 +25,6 @@ test("esnext-base", async (t) => {
 
 test("ts-base", async (t) => {
     const conf = tsBaseConf
-
-    t.true(isPlain(conf))
-    t.is((await eslintResults(conf, "")).length, 0)
-})
-
-test("dist-mod", async (t) => {
-    const conf = distModConf
 
     t.true(isPlain(conf))
     t.is((await eslintResults(conf, "")).length, 0)
