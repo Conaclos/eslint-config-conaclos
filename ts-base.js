@@ -18,6 +18,7 @@ module.exports = {
         "@typescript-eslint/no-empty-interface": 2,
         "@typescript-eslint/no-explicit-any": 2,
         "@typescript-eslint/no-extraneous-class": 2,
+        "@typescript-eslint/no-invalid-void-type": 2,
         "@typescript-eslint/no-misused-new": 2,
         "@typescript-eslint/no-non-null-assertion": 2,
         "@typescript-eslint/no-var-requires": 2,
